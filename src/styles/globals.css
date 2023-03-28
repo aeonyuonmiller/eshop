@@ -66,8 +66,8 @@ li {
 
 .loader p{
   position: fixed;
-  color: var(--secondary);
-  font-size: 100px;
+  color: var(--primary);
+  font-size: 50px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
 }
