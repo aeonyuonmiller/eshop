@@ -57,7 +57,10 @@ li {
 
 .loader p{
   position: fixed;
-  color: var(--tertiary);
+  color: var(--secondary);
+  font-size: 100px;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {
