@@ -23,7 +23,7 @@ function Nav () {
             <a className="capsule" variants={item}>youtube</a>
         </m.div>
         
-        <m.span initial={{ opacity: 0, scale:0.5, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
+        <m.span initial={{ opacity: 0, scale:0, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
             <div className="cart-icon"></div>
         </m.span>
       </nav>
