@@ -1,5 +1,6 @@
 import React from 'react'
 import { m } from "framer-motion";
+import Link from 'next/link'
 
 function Nav () {
     const group = {
@@ -14,13 +15,13 @@ function Nav () {
 
   return (
       <nav>
-        <m.ul initial="hide" animate="show" variants={group}>
-            <m.li variants={item}>returns</m.li>
-            <m.li variants={item}>shipping</m.li>
-            <m.li variants={item}>privacy</m.li>
-            <m.li variants={item}>instagram</m.li>
-            <m.li variants={item}>youtube</m.li>
-        </m.ul>
+        <m.div initial="hide" animate="show" variants={group}>
+            <Link className="capsule" href="/returns" variants={item}>returns</Link>
+            <Link className="capsule" href="/shipping" variants={item}>shipping</Link>
+            <Link className="capsule" href="/privacy" variants={item}>privacy</Link>
+            <a className="capsule" variants={item}>instagram</a>
+            <a className="capsule" variants={item}>youtube</a>
+        </m.div>
         
         <m.span initial={{ opacity: 0, scale:0.5, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
             <div className="cart-icon"></div>
