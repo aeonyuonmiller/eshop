@@ -1,11 +1,12 @@
 import React from 'react'
 import Layout from './components/Layout'
+import { m } from "framer-motion";
 
 const privacy = () => {
   return (
     <Layout>
       <h1>Privacy</h1>
-      <span>
+      <m.span initial={{y: 50, opacity: 0}} animate={{y: 0, opacity:1, transition:{duration: .8, delay: .2}}} exit={{y: -50, opacity: 0, transition:{duration: .4}}}>
         <h5>Privacy Policy</h5>
         <p>At our online shop, we are committed to protecting your privacy and ensuring that your personal information is safe and secure. This Privacy Policy outlines the types of information we collect from you, how we use and protect that information, and your rights regarding your personal information.</p>
 
@@ -14,9 +15,9 @@ const privacy = () => {
       
         <h5>Contact us</h5>
         <p>If you have any questions or concerns about our Privacy Policy or the way we handle your personal information, please contact us at privacy@introvert.live. We will do our best to address your concerns and ensure that your personal information is protected and secure.</p>
-      </span>
+      </m.span>
 
-      <span>
+      <m.span initial={{y: 50, opacity: 0}} animate={{y: 0, opacity:1, transition:{duration: .8, delay: .2}}} exit={{y: -50, opacity: 0, transition:{duration: .4, delay: .1}}}>
         <h5>How We Use Your Information</h5>
         <p>We use your personal information to process your orders, communicate with you about your orders and our products, and to improve our site and services. We may also use your information to send you marketing communications, such as newsletters or promotional offers, but only if you have given us your consent to do so.</p>
         <p>We do not sell, rent, or trade your personal information to third parties. However, we may share your information with our trusted partners and service providers who help us operate our site and provide our services to you.</p>
@@ -26,7 +27,7 @@ const privacy = () => {
 
         <h5>Your Rights</h5>
         <p>You have the right to access, update, or delete your personal information at any time. You also have the right to object to the processing of your personal information, and to request that we restrict the use of your information. To exercise these rights, please contact us at the email address provided below.</p>
-      </span>
+      </m.span>
     </Layout>
   )
 }
