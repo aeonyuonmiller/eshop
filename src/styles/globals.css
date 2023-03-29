@@ -41,7 +41,7 @@ a {
   transition: opacity ease-in-out .4s;
 }
 
-a:hover{ opacity:1; font-weight: 800; }
+a:hover{ opacity:1; font-weight: 800; cursor: pointer; }
 
 .capsule {
   position: relative;
@@ -82,7 +82,7 @@ a:hover{ opacity:1; font-weight: 800; }
   transition: all ease-in-out .3s;
 }
 
-.cart-icon:hover, .cart-icon:focus {
+.cart-icon:hover, .cart-icon:focus, .cart-icon:active {
   width: 50px;
   height: 50px;
   transform: translateY(-15px);
