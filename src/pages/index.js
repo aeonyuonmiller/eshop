@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>shop</title>
-        <meta name="description" content="online shop for introvert" />
+        <title>introvert</title>
+        <meta name="description" content="comfortable in silence" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -20,6 +20,11 @@ export default function Home() {
         <m.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
+          exit={{
+            y: -50,
+            opacity: 0,
+            transition: { ease: [0.98, 0, 0.2, 1.01], duration: 0.6 },
+          }}
           transition={{ delay: 0.5 }}
           className={styles.center}
         >

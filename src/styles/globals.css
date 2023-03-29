@@ -41,7 +41,7 @@ a {
   transition: opacity ease-in-out .4s;
 }
 
-a:hover{ opacity:1 }
+a:hover{ opacity:1; font-weight: 800; }
 
 .capsule {
   position: relative;
