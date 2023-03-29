@@ -76,12 +76,13 @@ a:hover{ opacity:1 }
   backdrop-filter: blur(16px);
   width: 20px;
   height: 20px;
+  margin-left: 5px;
   border-radius: 50%;
   transform: translateY(0px);
   transition: all ease-in-out .3s;
 }
 
-.cart-icon:hover {
+.cart-icon:hover, .cart-icon:focus {
   width: 50px;
   height: 50px;
   transform: translateY(-15px);

@@ -15,10 +15,9 @@ export default function App({ Component, pageProps, router }) {
         <LazyMotion strict features={domAnimation}>
           <AnimatePresence mode="wait">
             <Component {...pageProps} key={router.route} />
-            <Nav />
-
-            <Loader />
           </AnimatePresence>
+          <Nav />
+          <Loader />
         </LazyMotion>
       </MotionConfig>
     </>

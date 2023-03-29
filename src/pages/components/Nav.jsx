@@ -16,16 +16,16 @@ function Nav () {
   return (
       <nav>
         <m.div initial="hide" animate="show" variants={group}>
-            <Link className="capsule" href="/returns" variants={item}>returns</Link>
-            <Link className="capsule" href="/shipping" variants={item}>shipping</Link>
-            <Link className="capsule" href="/privacy" variants={item}>privacy</Link>
-            <a className="capsule" variants={item}>instagram</a>
-            <a className="capsule" variants={item}>youtube</a>
+            <Link tabIndex={2} className="capsule" href="/returns" variants={item}>returns</Link>
+            <Link tabIndex={2} className="capsule" href="/shipping" variants={item}>shipping</Link>
+            <Link tabIndex={2} className="capsule" href="/privacy" variants={item}>privacy</Link>
+            <a tabIndex={2} className="capsule" variants={item}>instagram</a>
+            <a tabIndex={2} className="capsule" variants={item}>youtube</a>
         </m.div>
         
-        <m.span initial={{ opacity: 0, scale:0, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
+        <m.a tabIndex={1} initial={{ opacity: 0, scale:0, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
             <div className="cart-icon"></div>
-        </m.span>
+        </m.a>
       </nav>
   )
 }
