@@ -106,9 +106,17 @@ a:hover{ opacity:1; font-weight: 800; cursor: pointer; }
 .loader p{
   position: fixed;
   color: var(--primary);
-  font-size: 20px;
+  font-size: 12px;
   font-family: "Inter", sans-serif;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.layout{
+  background:green;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5em 0;
 }
 
 @media (prefers-color-scheme: dark) {

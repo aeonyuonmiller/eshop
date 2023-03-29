@@ -1,8 +1,9 @@
 import React from 'react'
+import Layout from './components/Layout'
 
 const privacy = () => {
   return (
-    <div>privacy</div>
+    <Layout>privacy</Layout>
   )
 }
 

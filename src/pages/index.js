@@ -28,14 +28,6 @@ export default function Home() {
           transition={{ delay: 0.5 }}
           className={styles.center}
         >
-          {/* <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={360}
-            height={300}
-            priority
-          /> */}
           <Plum />
         </m.div>
       </main>
