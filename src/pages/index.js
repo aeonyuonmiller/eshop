@@ -3,8 +3,9 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { m } from "framer-motion";
-
 const inter = Inter({ subsets: ["latin"] });
+
+import Plum from "./components/icons/Plum";
 
 export default function Home() {
   return (
@@ -22,14 +23,15 @@ export default function Home() {
           transition={{ delay: 0.5 }}
           className={styles.center}
         >
-          <Image
+          {/* <Image
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
             width={360}
-            height={74}
+            height={300}
             priority
-          />
+          /> */}
+          <Plum />
         </m.div>
       </main>
     </>

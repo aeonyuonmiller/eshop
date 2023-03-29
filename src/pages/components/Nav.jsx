@@ -23,7 +23,7 @@ function Nav () {
             <a tabIndex={2} className="capsule" variants={item}>youtube</a>
         </m.div>
         
-        <m.a tabIndex={1} initial={{ opacity: 0, scale:0, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
+        <m.a href="/" tabIndex={1} initial={{ opacity: 0, scale:0, y:50, filter: "blur(18px)" }} animate={{ opacity:1, scale:1, y:0, filter: "blur(0)" }} transition={{ delay:1, duration:0.4 }}>
             <div className="cart-icon"></div>
         </m.a>
       </nav>
