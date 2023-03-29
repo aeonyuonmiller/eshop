@@ -14,8 +14,12 @@
 body{ 
   background: var(--primary); 
   height: 100vh;
-  /* overflow-y: hidden; */
   font-family: "Inter", Helvetica, Arial, sans-serif;
+
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
+  font-smooth: always;
 }
 
 h1{ 
