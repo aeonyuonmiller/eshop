@@ -1,9 +1,11 @@
 import React from 'react'
 import { m } from "framer-motion";
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <m.div initial={{opacity:0}} animate={{opacity:1, transition:{ duration:1 }}} exit={{opacity:0}} className='layout'>{children}</m.div>
+    <m.div className='layout' initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 1 } }} exit={{ opacity: 0 }}>
+      {children}
+    </m.div>
   )
 }
 
