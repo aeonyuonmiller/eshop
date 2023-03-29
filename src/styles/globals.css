@@ -148,13 +148,13 @@ a:hover{ opacity:1; font-weight: 800; cursor: pointer; }
   overflow-y: scroll;
 }
 
-.layout > * {
-  grid-column: 2;
+.layout span:nth-child(3) {
+  margin-top: 180px;
 }
 
-.layout > *:nth-child(2n) {
-  grid-column: 3;
-}
+/* .layout > * {
+  grid-column: 2;
+} */
 
 .layout > h1 {
   grid-column: 1;
