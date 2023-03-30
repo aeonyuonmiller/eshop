@@ -30,13 +30,18 @@ export default function Home() {
         <Plum />
       </m.div>
 
-      <div className="scroller">
+      <m.div
+        className="scroller"
+        initial={{ x: "100%" }}
+        animate={{ x: "0" }}
+        exit={{ x: "-100%" }}
+      >
         <div>product 1</div>
         <div>product 2</div>
         <div>product 3</div>
         <div>product 4</div>
         <div>product 5</div>
-      </div>
+      </m.div>
     </>
   );
 }

@@ -79,6 +79,16 @@ a {
   outline-offset: 5px;
 }
 
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #0d8773;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
+}
+
 a:hover{ opacity:1; cursor: pointer; }
 
 .underline {
@@ -210,8 +220,8 @@ a:hover{ opacity:1; cursor: pointer; }
 .scroller div {
   position: relative;
   color:white;
-  background: rgb(60, 60, 60);
-  width: 50vw;
+  background: rgba(60, 60, 60, 0.628);
+  width: 60vh;
   height: 60vh;
   overflow: hidden;
   margin: 0;
