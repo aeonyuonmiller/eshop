@@ -22,12 +22,6 @@ body{
   font-smooth: always;
 }
 
-.fix{
-    position: absolute;
-    left: 120px;
-    top: 10em;
-    z-index: 90;
-  }
 h1{ 
   font-size: 8px;
   font-weight: 800;
@@ -56,10 +50,13 @@ nav{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 5em;
+  height: 80px;
   display: flex;
   justify-content: center;
   z-index: 100;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 a { 
@@ -76,7 +73,7 @@ a {
   transition: opacity ease-in-out .4s;
 }
 
-a:hover{ opacity:1; font-weight: 800; cursor: pointer; }
+a:hover{ opacity:1; cursor: pointer; }
 
 .underline {
   position: relative;
@@ -113,7 +110,7 @@ a:hover{ opacity:1; font-weight: 800; cursor: pointer; }
   height: 20px;
   margin-left: 5px;
   border-radius: 50%;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
   transition: all ease-in-out .3s;
 }
 
@@ -157,10 +154,6 @@ a:hover{ opacity:1; font-weight: 800; cursor: pointer; }
   grid-template-columns: 100px 1fr 1fr;
   grid-gap: 0 5em;
   overflow-y: scroll;
-}
-
-.layout span:first-child {
-  margin-top: 80px;
 }
 
 /* .layout > * {
