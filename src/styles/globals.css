@@ -22,6 +22,11 @@ body{
   font-smooth: always;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
 h1 { 
   font-size: 8px;
   font-weight: 800;
@@ -71,6 +76,7 @@ a {
   opacity: .8;
   margin-right: 1rem; 
   transition: opacity ease-in-out .4s;
+  outline-offset: 5px;
 }
 
 a:hover{ opacity:1; cursor: pointer; }
@@ -171,6 +177,14 @@ a:hover{ opacity:1; cursor: pointer; }
 .full-bleed {
   width: 100%;
   grid-column: 1 / 4;
+}
+
+.scroller {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  padding: 5em;
 }
 
 @media only screen and (max-width: 1100px) {

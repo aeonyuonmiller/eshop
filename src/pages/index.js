@@ -31,6 +31,14 @@ export default function Home() {
           <Plum />
         </m.div>
       </main>
+
+      <div className="scroller">
+        <div>product 1</div>
+        <div>product 2</div>
+        <div>product 3</div>
+        <div>product 4</div>
+        <div>product 5</div>
+      </div>
     </>
   );
 }
