@@ -14,6 +14,7 @@ function Nav () {
     }
 
   return (
+    <>
       <nav>
       <m.div initial="hide" animate="show" variants={group}>
             <m.span variants={item}><Link tabIndex={2} className="underline" href="/">home</Link></m.span>
@@ -29,6 +30,12 @@ function Nav () {
         </Link>
         </m.span>
       </nav>
+
+      {/* <div className='cart'>
+        Shirt Raglan Basic oversize
+        150 €
+      </div> */}
+    </>
   )
 }
 
