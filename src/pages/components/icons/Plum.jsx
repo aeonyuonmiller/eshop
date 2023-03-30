@@ -1,5 +1,4 @@
 import * as React from "react";
-import { m } from "framer-motion";
 
 function Plum() {
   return (

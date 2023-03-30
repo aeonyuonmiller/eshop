@@ -16,21 +16,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <m.div
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{
-            y: -50,
-            opacity: 0,
-            transition: { ease: [0.98, 0, 0.2, 1.01], duration: 0.6 },
-          }}
-          transition={{ delay: 0.5 }}
-          className={styles.center}
-        >
-          <Plum />
-        </m.div>
-      </main>
+      <m.div
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{
+          y: -50,
+          opacity: 0,
+          transition: { ease: [0.98, 0, 0.2, 1.01], duration: 0.6 },
+        }}
+        transition={{ delay: 0.5 }}
+        className="centerstage"
+      >
+        <Plum />
+      </m.div>
 
       <div className="scroller">
         <div>product 1</div>
