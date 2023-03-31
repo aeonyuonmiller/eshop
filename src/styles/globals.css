@@ -79,7 +79,7 @@ a {
   outline-offset: 5px;
 }
 
-a::after {
+/* a::after {
   content: "";
   position: absolute;
   background-color: #0d8773;
@@ -87,7 +87,7 @@ a::after {
   left: var(--tap-increment);
   right: var(--tap-increment);
   bottom: var(--tap-increment);
-}
+} */
 
 a:hover{ opacity:1; cursor: pointer; }
 
@@ -147,7 +147,7 @@ a:hover{ opacity:1; cursor: pointer; }
 }
 
 .loader{
-  position: absolute;
+  position: fixed;
   top: 0;
   left:0;
   height: 100vh;
@@ -217,28 +217,28 @@ a:hover{ opacity:1; cursor: pointer; }
   width: 0 !important;
 }
 
-.scroller div {
+.scroller > div {
   position: relative;
   color:white;
   background: rgba(60, 60, 60, 0.628);
   width: 60vh;
   height: 60vh;
   overflow: hidden;
-  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-right: 150px; */
-  /* margin-left: auto; */
+  margin: 0;
+  margin-right: 150px;
+  margin-left: auto;
   scroll-snap-align: center;
   transition: all ease .15s;
 }
 .scroller div:first-child {
-  margin-left: 25vh;
+  margin-left: 60vh;
 }
 
 .scroller div:last-child {
-  margin-right: 25vh;
+  margin-right: 60vh;
 }
 
 .centerstage{

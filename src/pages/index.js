@@ -33,8 +33,8 @@ export default function Home() {
       <m.div
         className="scroller"
         initial={{ x: "100%" }}
-        animate={{ x: "0" }}
-        exit={{ x: "-100%" }}
+        animate={{ x: "0", transition: { delay: 0.6, duration: 1 } }}
+        exit={{ y: 20, opacity: 0 }}
       >
         <div>product 1</div>
         <div>product 2</div>
