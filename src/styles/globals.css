@@ -2,6 +2,7 @@
   --primary: rgb(183, 183, 183);
   --secondary: rgba(255, 255, 255, 0.8);
   --tertiary: rgb(88, 88, 88);
+  --tap-increment: -16px;
 }
 
 * {
@@ -79,16 +80,6 @@ a {
   outline-offset: 5px;
 }
 
-/* a::after {
-  content: "";
-  position: absolute;
-  background-color: #0d8773;
-  top: var(--tap-increment);
-  left: var(--tap-increment);
-  right: var(--tap-increment);
-  bottom: var(--tap-increment);
-} */
-
 a:hover{ opacity:1; cursor: pointer; }
 
 .underline {
@@ -128,15 +119,24 @@ a:hover{ opacity:1; cursor: pointer; }
     background: rgb(199, 200, 208);
   }
 .cart-icon{
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 1);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   margin-left: 5px;
   border-radius: 50%;
   transform: translateY(-1px);
   transition: all ease-in-out .3s;
+}
+
+.cart-icon::after {
+  content: "";
+  position: absolute;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
 }
 .cart-icon:hover, .cart-icon:focus, .cart-icon:active {
   width: 50px;

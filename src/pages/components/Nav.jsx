@@ -17,7 +17,6 @@ function Nav () {
     <>
       <nav>
       <m.div initial="hide" animate="show" variants={group}>
-            <m.span variants={item}><Link tabIndex={2} className="underline" href="/">home</Link></m.span>
             <m.span variants={item}><Link tabIndex={2} className="underline" href="/returns">returns</Link></m.span>
             <m.span variants={item}><Link tabIndex={2} className="underline" href="/shipping">shipping</Link></m.span>
             <m.span variants={item}><Link tabIndex={2} className="underline" href="/privacy">privacy</Link></m.span>
