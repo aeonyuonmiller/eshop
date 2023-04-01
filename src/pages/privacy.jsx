@@ -15,7 +15,7 @@ const privacy = () => {
           <p>We collect personal information from you when you make a purchase from our online shop. This information may include your name, email address, phone number, billing address, and shipping address. We also collect information about your purchase history and the products you have viewed on our site.</p>
         
           <h5>Contact us</h5>
-          <p>If you have any questions or concerns about our Privacy Policy or the way we handle your personal information, please contact us at privacy@introvert.live. We will do our best to address your concerns and ensure that your personal information is protected and secure.</p>
+          <p>If you have any questions or concerns about our Privacy Policy or the way we handle your personal information, please contact us at <a className='underline' href="mailto:privacy@introvert.live">privacy@introvert.live</a>. We will do our best to address your concerns and ensure that your personal information is protected and secure.</p>
         </m.span>
 
         <m.span initial={{y: 30, opacity: 0}} animate={{y: 0, opacity:1, transition:{ ease: [.3,0,.2,1.01], duration: 1.2, delay: .8}}} exit={{y: -30, opacity: 0, transition:{ease: [.3,0,.2,1.01], duration: .6, delay: .1}}}>

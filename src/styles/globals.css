@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid springgreen; */
 }
 
 body{ 
@@ -119,6 +118,10 @@ a:hover{ opacity:1; cursor: pointer; }
     background: rgb(199, 200, 208);
   }
 .cart-icon{
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 1);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
@@ -129,6 +132,8 @@ a:hover{ opacity:1; cursor: pointer; }
   transform: translateY(-1px);
   transition: all ease-in-out .3s;
 }
+.cart-icon span{ opacity:0; transform: translate(1px, -8px); }
+.cart-icon:hover span{ opacity: 1; transform: translate(1px, 1px); transition: all ease .5s; }
 
 .cart-icon::after {
   content: "";
@@ -193,7 +198,7 @@ a:hover{ opacity:1; cursor: pointer; }
   position: absolute;
   top: 0;
   height: 100vh;
-  padding: 5em;
+  padding: 0;
   scroll-snap-type: x mandatory;
   display: flex;
   flex-direction: row;
@@ -203,7 +208,7 @@ a:hover{ opacity:1; cursor: pointer; }
 
   /* scroll snap */
   overflow-x: scroll;
-  overscroll-behavior-y: contain;
+  overscroll-behavior-x: contain;
 
   /* remove scrollbar */
   -ms-overflow-style: none;
@@ -217,7 +222,7 @@ a:hover{ opacity:1; cursor: pointer; }
   width: 0 !important;
 }
 
-.scroller > div {
+.scroller div {
   position: relative;
   color:white;
   background: rgba(60, 60, 60, 0.628);

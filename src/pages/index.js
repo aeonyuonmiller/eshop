@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import { m } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,11 +34,13 @@ export default function Home() {
         animate={{ x: "0", transition: { delay: 0.6, duration: 1 } }}
         exit={{ y: 20, opacity: 0 }}
       >
-        <div>product 1</div>
-        <div>product 2</div>
-        <div>product 3</div>
-        <div>product 4</div>
-        <div>product 5</div>
+        <div className="scroller">
+          <div>product 1</div>
+          <div>product 2</div>
+          <div>product 3</div>
+          <div>product 4</div>
+          <div>product 5</div>
+        </div>
       </m.div>
     </>
   );
