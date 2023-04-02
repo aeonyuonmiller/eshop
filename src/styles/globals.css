@@ -262,3 +262,7 @@ a:hover{ opacity:1; cursor: pointer; }
     padding: 8em 10% 6em 10%;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .underline { padding: 4px 0; }
+}

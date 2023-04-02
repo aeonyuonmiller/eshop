@@ -32,7 +32,7 @@ export default function Home() {
         className="scroller"
         initial={{ x: "100%" }}
         animate={{ x: "0", transition: { delay: 0.6, duration: 1 } }}
-        exit={{ y: 20, opacity: 0 }}
+        exit={{ opacity: 0 }}
       >
         <div className="scroller">
           <div>product 1</div>
