@@ -20,8 +20,7 @@ function Nav () {
           <m.span variants={item}><Link tabIndex={2} className="underline" href="/returns">returns</Link></m.span>
           <m.span variants={item}><Link tabIndex={2} className="underline" href="/shipping">shipping</Link></m.span>
           <m.span variants={item}><Link tabIndex={2} className="underline" href="/privacy">privacy</Link></m.span>
-          <m.span variants={item}><Link tabIndex={2} className="underline" href="/contact">contact</Link></m.span>
-          
+          <m.span variants={item}><Link tabIndex={2} className="underline" href="/contact">contact</Link></m.span>        
         </m.div>
         
         <m.span initial={{ opacity: 0, scale: 0, y: 50 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ delay: 1.8, duration: 0.4 }}>
