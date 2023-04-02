@@ -265,12 +265,17 @@ a:hover{ opacity:1; cursor: pointer; }
   user-select: none;
 }
 
-.slider > .image {
+.slider .image {
   width: 50vmin;
   height: 50vmin;
   object-fit: cover;
   object-position: 0% center;
   scroll-snap-align: center;
+}
+
+.slider .image:first-child { margin-left: 30vw; }
+.slider .image:last-child {
+  margin-right: 30vw;
 }
 
 @media only screen and (max-width: 1100px) {
