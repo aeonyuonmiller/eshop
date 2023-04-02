@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { m } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 import Logo from "./components/icons/Logo";
+import ImageSlider from "./components/ImageSlider";
 
 export default function Home() {
   return (
@@ -28,19 +29,21 @@ export default function Home() {
         <Logo />
       </m.div>
 
+      <ImageSlider />
+
       <m.div
         className="scroller"
         initial={{ x: "100%" }}
         animate={{ x: "0", transition: { delay: 0.6, duration: 1 } }}
         exit={{ opacity: 0 }}
       >
-        <div className="scroller">
+        {/* <div className="scroller">
           <div>product 1</div>
           <div>product 2</div>
           <div>product 3</div>
           <div>product 4</div>
           <div>product 5</div>
-        </div>
+        </div> */}
       </m.div>
     </>
   );
