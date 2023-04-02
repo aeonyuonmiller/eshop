@@ -18,7 +18,7 @@ const privacy = () => {
           <p>If you have any questions or concerns about our Privacy Policy or the way we handle your personal information, please contact us at <a className='underline' href="mailto:privacy@introvert.live">privacy@introvert.live</a>. We will do our best to address your concerns and ensure that your personal information is protected and secure.</p>
         </m.span>
 
-        <m.span initial={{y: 30, opacity: 0}} animate={{y: 0, opacity:1, transition:{ ease: [.3,0,.2,1.01], duration: 1.2, delay: .8}}} exit={{y: -30, opacity: 0, transition:{ease: [.3,0,.2,1.01], duration: .6, delay: .1}}}>
+        <m.span initial={{y: 30, opacity: 0}} animate={{y: 0, opacity:1, transition:{ ease: [.3,0,.2,1.01], duration: 1.2, delay: .8}}} exit={{y: -30, opacity: 0, transition:{ease: [.3,0,.2,1.01], duration: .6, delay: .05}}}>
           <h5>How We Use Your Information</h5>
           <p>We use your personal information to process your orders, communicate with you about your orders and our products, and to improve our site and services. We may also use your information to send you marketing communications, such as newsletters or promotional offers, but only if you have given us your consent to do so.</p>
           <p>We do not sell, rent, or trade your personal information to third parties. However, we may share your information with our trusted partners and service providers who help us operate our site and provide our services to you.</p>
