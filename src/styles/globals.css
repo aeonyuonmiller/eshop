@@ -257,7 +257,7 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .slider {
   display: flex;
-  gap: 8vmin;
+  gap: 16vmin;
   position: absolute;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 24px; /* distance the snapping happens */
@@ -266,8 +266,9 @@ a:hover{ opacity:1; cursor: pointer; }
 }
 
 .slider .image {
-  width: 50vmin;
   height: 50vmin;
+  width: 50vmin;
+  /* aspect-ratio: 16/9; */
   object-fit: cover;
   object-position: 0% center;
   scroll-snap-align: center;
