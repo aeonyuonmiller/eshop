@@ -16,7 +16,7 @@ function ImageSlider() {
     }
 
     return (
-    <m.div initial="hide" animate="show" exit="exit" variants={group} className="slider" data-mouse-down-at="0" data-prev-percentage="0">
+    <m.div className="slider" initial="hide" animate="show" exit="exit" variants={group} data-mouse-down-at="0" data-prev-percentage="0">
         <m.img variants={item} className="image" draggable="false" src="./cube.png" whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type:"spring", damping: 18 }}}/>
         <m.img variants={item} className="image" draggable="false" src="./glas.png" whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type:"spring", damping: 18 }}}/>
         <m.img variants={item} className="image" draggable="false" src="./lava.png" whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type:"spring", damping: 18 }}}/>

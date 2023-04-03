@@ -261,8 +261,14 @@ a:hover{ opacity:1; cursor: pointer; }
   position: absolute;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 24px; /* distance the snapping happens */
+  align-items: center;
   transform: translate(0%, 50%);
   user-select: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
 }
 
 .slider .image {
@@ -272,7 +278,6 @@ a:hover{ opacity:1; cursor: pointer; }
   /* aspect-ratio: 16/9; */
   object-fit: cover;
   object-position: 0% center;
-  margin-bottom: -50px;
 }
 
 .slider .image:first-child { margin-left: 30vw; }
@@ -285,6 +290,25 @@ a:hover{ opacity:1; cursor: pointer; }
   .layout{
     grid-template-columns: 1fr;
     padding: 8em 10% 6em 10%;
+  }
+  .slider {
+    transform: translate(0%, 15%);
+    gap: 16vmin;
+    scroll-padding: 0 24px;
+  }
+  .slider .image {
+    height: 70vmin;
+    width: 50vmin;
+    object-fit: cover;
+    object-position: 0% center;
+  }
+
+  .slider .image:first-child {
+    margin-left: 30vw;
+  }
+
+  .slider .image:last-child {
+    margin-right: 30vw;
   }
 }
 
