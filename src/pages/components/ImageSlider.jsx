@@ -5,8 +5,8 @@ function ImageSlider() {
     const group = {
         hide: {},
         hover: {},
-        show: { transition: { staggerChildren: 0.1, delayChildren: 1 } },
-        exit: { opacity:0 },
+        show: { transition: { staggerChildren: 0.1, delayChildren: 1 }},
+        exit: { opacity: 0 },
       }
   
       const item = {
