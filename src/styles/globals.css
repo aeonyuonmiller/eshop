@@ -266,12 +266,13 @@ a:hover{ opacity:1; cursor: pointer; }
 }
 
 .slider .image {
+  scroll-snap-align: center;
   height: 50vmin;
   width: 50vmin;
   /* aspect-ratio: 16/9; */
   object-fit: cover;
   object-position: 0% center;
-  scroll-snap-align: center;
+  margin-bottom: -50px;
 }
 
 .slider .image:first-child { margin-left: 30vw; }
