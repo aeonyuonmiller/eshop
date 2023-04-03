@@ -5,13 +5,14 @@ function ImageSlider() {
     const group = {
         hide: {},
         hover: {},
-        show: { transition:{ staggerChildren:0.1, delayChildren:1 }}
+        show: { transition: { staggerChildren: 0.1, delayChildren: 1 } },
+        exit: { opacity:0 },
       }
   
       const item = {
         hide: { y: 20, opacity: 0, filter: "blur(6px)" },
         hover: { scale: 1.1, objectPosition: "100% center", transition: { ease: [.98, 0, .2, 1.01], duration: 1 } },
-        show: { y: 0, opacity: 1, filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }}
+        show: { y: 0, opacity: 1, objectPosition: "0% center", filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }}
     }
 
     return (
