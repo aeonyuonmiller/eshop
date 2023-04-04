@@ -261,8 +261,8 @@ a:hover{ opacity:1; cursor: pointer; }
   object-position: 0% center;
 }
 
-.slider .image:first-child { margin-left: 40vw; }
-.slider .image:last-child { margin-right: 40vw; }
+.slider .image:first-child { margin-left: calc(50vw - 25vmin); }
+.slider .image:last-child { margin-right: calc(50vw - 25vmin); } 
 
 svg#progress{
   position: fixed;
