@@ -280,10 +280,8 @@ a:hover{ opacity:1; cursor: pointer; }
   object-position: 0% center;
 }
 
-.slider .image:first-child { margin-left: 30vw; }
-.slider .image:last-child {
-  margin-right: 30vw;
-}
+.slider .image:first-child { margin-left: 40vw; }
+.slider .image:last-child { margin-right: 40vw; }
 
 @media only screen and (max-width: 1100px) {
   h1{ font-size: 16px; margin-bottom: 3em; }
@@ -302,11 +300,9 @@ a:hover{ opacity:1; cursor: pointer; }
     object-fit: cover;
     object-position: 0% center;
   }
-
   .slider .image:first-child {
     margin-left: 30vw;
   }
-
   .slider .image:last-child {
     margin-right: 30vw;
   }
