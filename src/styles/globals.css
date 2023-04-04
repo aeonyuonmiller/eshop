@@ -238,7 +238,6 @@ a:hover{ opacity:1; cursor: pointer; }
   left: 50px;
 }
 
-
 .slider {
   display: flex;
   gap: 28vw;
@@ -264,6 +263,27 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .slider .image:first-child { margin-left: 40vw; }
 .slider .image:last-child { margin-right: 40vw; }
+
+svg#progress{
+  position: fixed;
+  top: 5em;
+  left: calc(50% - 25px);
+  z-index: 200;
+}
+#progress .indicator {
+  stroke: white;
+}
+
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: none;
+}
+
+.bg {
+  stroke: white;
+  opacity: 0.3;
+}
 
 @media only screen and (max-width: 1100px) {
   h1{ font-size: 16px; margin-bottom: 3em; }
