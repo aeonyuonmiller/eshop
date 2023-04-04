@@ -208,34 +208,25 @@ a:hover{ opacity:1; cursor: pointer; }
   align-items: center;
 }
 
-.close{
+.close {
+  user-select: none;
   position: fixed;
-  top: calc(50% - 50px);
-  left: calc(12% - 40px);
-  width: 80px;
-  height: 80px;
-  font-size: 6px;
-  font-weight: 100;
-  letter-spacing: 3px;
-  color: rgba(255, 255, 255, 0.5);
-  background-color: rgba(0, 0, 0, 0.01);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  filter: blur(.5px);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  top: calc(50vh - 60px);
+  left: 15vmin;
+  backdrop-filter: blur(10px);
+  background-color: #a4a4a441;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  transition: all ease .5s;
-}
-.close:hover{
-  border: 1px solid rgba(255, 255, 255, .1);
-    color: rgba(255, 255, 255, 1);
-}
-.close *{
-  position: absolute;
-  left: 50px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  z-index: 200;
 }
 
 .slider {
@@ -264,10 +255,10 @@ a:hover{ opacity:1; cursor: pointer; }
 .slider .image:first-child { margin-left: calc(50vw - 25vmin); }
 .slider .image:last-child { margin-right: calc(50vw - 25vmin); } 
 
-svg#progress{
+svg.scrollbar{
   position: fixed;
   top: 4em;
-  left: calc(50% - 25px);
+  left: calc(50% - 150px);
   z-index: 200;
 }
 

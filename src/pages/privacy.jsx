@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from "next/head";
 import Layout from './components/Layout'
 import CloseButton from './components/icons/CloseButton'
 import { m } from "framer-motion";
@@ -6,7 +7,12 @@ import { m } from "framer-motion";
 const privacy = () => {
   return (
     <>
-      <CloseButton />
+      <Head>
+        <title>introvert • privacy</title>
+        <meta name="description" content="comfortable in silence" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
       <Layout bgColor="#212121">
         <h1>Privacy</h1>
@@ -33,6 +39,8 @@ const privacy = () => {
           <p>You have the right to access, update, or delete your personal information at any time. You also have the right to object to the processing of your personal information, and to request that we restrict the use of your information. To exercise these rights, please contact us at the email address provided below.</p>
         </m.span>
       </Layout>
+
+      <CloseButton />
     </>
   )
 }

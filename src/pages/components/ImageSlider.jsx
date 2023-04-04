@@ -1,11 +1,11 @@
 import { useRef } from "react";
 import { m, useScroll } from "framer-motion";
+import ScrollBar from "./icons/ScrollBar";
 
 function ImageSlider() {
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({ container: ref });
 
-  
   const group = {
     hide: {},
     hover: {},
@@ -22,17 +22,7 @@ function ImageSlider() {
 
   return (
     <>
-    <svg id="progress" width="50" height="50" viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="30" pathLength="1" />
-      <m.circle
-        cx="50"
-        cy="50"
-        r="30"
-        pathLength="0"
-        className="indicator"
-        style={{ pathLength: scrollXProgress }}
-      />
-    </svg>
+    <ScrollBar ref={ref} />
 
     <m.div ref={ref} className="slider" initial="hide" animate="show" exit="exit" variants={group} data-mouse-down-at="0" data-prev-percentage="0">
         <m.img variants={item} className="image" draggable="false" src="./cube.png" animate={{ scale: 1, objectPosition: "0% center", transition: { type:"spring", damping: 18 }}} whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type: "spring", damping: 18 } }} />
