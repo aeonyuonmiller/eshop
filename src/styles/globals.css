@@ -257,7 +257,7 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .slider {
   display: flex;
-  gap: 16vmin;
+  gap: 56vmin;
   position: absolute;
   scroll-snap-type: x mandatory;
   scroll-padding: 0 24px; /* distance the snapping happens */
