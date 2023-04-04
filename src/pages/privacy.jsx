@@ -1,11 +1,14 @@
 import React from 'react'
 import Layout from './components/Layout'
+import CloseButton from './components/icons/CloseButton'
 import { m } from "framer-motion";
 
 const privacy = () => {
   return (
     <>
-      <Layout bgColor="#452e2e">
+      <CloseButton />
+
+      <Layout bgColor="#212121">
         <h1>Privacy</h1>
         <m.span initial={{y: 30, opacity: 0}} animate={{y: 0, opacity:1, transition:{ease: [.3,0,.2,1.01], duration: 1.2, delay: .4}}} exit={{y: -30, opacity: 0, transition:{ease: [.3,0,.2,1.01], duration: .6}}}>
           <h5>Privacy Policy</h5>

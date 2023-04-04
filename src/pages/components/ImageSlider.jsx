@@ -1,21 +1,21 @@
-import { m } from "framer-motion";
+import { m, useScroll } from "framer-motion";
 
 function ImageSlider() {
-    
-    const group = {
-        hide: {},
-        hover: {},
-        show: { transition: { staggerChildren: 0.1, delayChildren: 1 }},
-        exit: { opacity: 0 },
-      }
+  const { scrollYProgress } = useScroll()
   
-      const item = {
-        hide: { y: 20, opacity: 0, filter: "blur(6px)" },
-        leave: {scale:1,objectPosition: "0% center"},
-        hover: { scale: 1.1, objectPosition: "100% center", transition: { ease: [.98, 0, .2, 1.01], duration: 1 } },
-        show: { y: 0, opacity: 1, objectPosition: "0% center", filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }}
-      }
-
+  const group = {
+    hide: {},
+    hover: {},
+    show: { transition: { staggerChildren: 0.1, delayChildren: 1 }},
+    exit: { opacity: 0 },
+  }
+  
+  const item = {
+    hide: { y: 20, opacity: 0, filter: "blur(6px)" },
+    leave: {scale:1,objectPosition: "0% center"},
+    hover: { scale: 1.1, objectPosition: "100% center", transition: { ease: [.98, 0, .2, 1.01], duration: 1 } },
+    show: { y: 0, opacity: 1, objectPosition: "0% center", filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }}
+  }
 
     return (
     <m.div className="slider" initial="hide" animate="show" exit="exit" variants={group} data-mouse-down-at="0" data-prev-percentage="0">

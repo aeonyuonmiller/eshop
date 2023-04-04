@@ -64,11 +64,15 @@ nav{
   backdrop-filter: blur(4px);
 }
 
+nav a{
+  font-size: 10px;
+}
+
 a { 
   color: var(--secondary);
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 10px;
+  /* font-size: 10px; */
   font-family: "Inter", sans-serif;
   font-weight: 500;
   letter-spacing: 0.17em;
@@ -194,57 +198,6 @@ a:hover{ opacity:1; cursor: pointer; }
   grid-column: 1 / 4;
 }
 
-.scroller {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  padding: 0;
-  scroll-snap-type: x mandatory;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-
-  /* scroll snap */
-  overflow-x: scroll;
-  overscroll-behavior-x: contain;
-
-  /* remove scrollbar */
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-.scroller::-webkit-scrollbar {
-  display: none;
-  width: 0 !important;
-}
-
-.scroller div {
-  position: relative;
-  color:white;
-  background: rgba(60, 60, 60, 0.628);
-  width: 60vh;
-  height: 60vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  margin-right: 150px;
-  margin-left: auto;
-  scroll-snap-align: center;
-  transition: all ease .15s;
-}
-.scroller div:first-child {
-  margin-left: 60vh;
-}
-
-.scroller div:last-child {
-  margin-right: 60vh;
-}
 
 .centerstage{
   position: fixed;
@@ -255,12 +208,41 @@ a:hover{ opacity:1; cursor: pointer; }
   align-items: center;
 }
 
+.close{
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(12% - 40px);
+  width: 80px;
+  height: 80px;
+  font-size: 6px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.01);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  filter: blur(.5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all ease .5s;
+}
+.close:hover{
+  border: 1px solid rgba(255, 255, 255, .1);
+    color: rgba(255, 255, 255, 1);
+}
+.close *{
+  position: absolute;
+  left: 50px;
+}
+
+
 .slider {
   display: flex;
-  gap: 56vmin;
+  gap: 28vw;
   position: absolute;
-  scroll-snap-type: x mandatory;
-  scroll-padding: 0 24px; /* distance the snapping happens */
   align-items: center;
   transform: translate(0%, 50%);
   user-select: none;
@@ -292,7 +274,6 @@ a:hover{ opacity:1; cursor: pointer; }
   .slider {
     transform: translate(0%, 15%);
     gap: 16vmin;
-    scroll-padding: 0 24px;
   }
   .slider .image {
     height: 70vmin;
@@ -305,6 +286,13 @@ a:hover{ opacity:1; cursor: pointer; }
   }
   .slider .image:last-child {
     margin-right: 30vw;
+  }
+  .close{
+      position: fixed;
+      top: calc(50% - 40px);
+      left: calc(90% - 40px);
+      width: 50px;
+      height: 50px;
   }
 }
 
