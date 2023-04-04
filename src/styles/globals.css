@@ -243,14 +243,15 @@ a:hover{ opacity:1; cursor: pointer; }
   gap: 28vw;
   position: absolute;
   align-items: center;
-  transform: translate(0%, 50%);
+  transform: translate(0, 50%);
   user-select: none;
+  overflow-y: hidden;
 }
 
-.slider::-webkit-scrollbar {
+/* .slider::-webkit-scrollbar {
   display: none;
   width: 0 !important;
-}
+} */
 
 .slider .image {
   scroll-snap-align: center;
@@ -292,7 +293,8 @@ circle {
     padding: 8em 10% 6em 10%;
   }
   .slider {
-    transform: translate(0%, 15%);
+    transform: translate(0%, 50%);
+    overflow: visible;
     gap: 16vmin;
   }
   .slider .image {
