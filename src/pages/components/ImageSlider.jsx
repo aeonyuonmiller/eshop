@@ -29,7 +29,7 @@ function ImageSlider() {
       <m.img variants={item} className="image" draggable="false" src="./glas.png" animate={{ scale: 1, objectPosition: "0% center", transition: { type:"spring", damping: 18 }}} whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type:"spring", damping: 18 }}}/>
       <m.img variants={item} className="image" draggable="false" src="./lava.png" animate={{ scale: 1, objectPosition: "0% center", transition: { type:"spring", damping: 18 }}} whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type:"spring", damping: 18 }}}/>
       <m.img variants={item} className="image" draggable="false" src="./mirror.png" animate={{ scale: 1, objectPosition: "0% center", transition: { type:"spring", damping: 18 }}} whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type:"spring", damping: 18 }}}/>
-      <m.div animate={{y:[0,-50]}} transition={{duration:15}} className="placeholder">introverts • live • united ••• 2023</m.div>
+      <m.div animate={{y:[0,10]}} transition={{duration:15}} className="placeholder">introverts • live • united ••• 2023</m.div>
     </m.div>
     </>
   );
