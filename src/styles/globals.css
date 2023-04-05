@@ -239,6 +239,20 @@ a:hover{ opacity:1; cursor: pointer; }
   overflow: visible;
 }
 
+.placeholder{
+  width: 50vmin;
+  height: 50vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #404040;
+  text-transform: uppercase;
+  font-size: 6px;
+  letter-spacing: 2px;
+  background: rgb(252, 176, 69);
+  background: radial-gradient(circle, rgba(252, 176, 69, 1) 0%, rgba(253, 83, 29, 1) 25%, rgba(252, 176, 69, 0) 40%);
+}
+
 .slider::-webkit-scrollbar {
   display: none;
   width: 0 !important;
@@ -252,13 +266,13 @@ a:hover{ opacity:1; cursor: pointer; }
   object-position: 0% center;
 }
 
-.slider .image:first-child { margin-left: calc(50vw - 25vmin); }
-.slider .image:last-child { margin-right: calc(50vw - 25vmin); } 
+.slider *:first-child { margin-left: calc(50vw - 25vmin); }
+.slider *:last-child { margin-right: calc(50vw - 25vmin); } 
 
-svg.scrollbar{
+.scrollbar{
   position: fixed;
-  top: 4em;
-  left: calc(50% - 150px);
+  bottom: 1.4em;
+  left: calc(50% - 120px);
   z-index: 200;
 }
 
