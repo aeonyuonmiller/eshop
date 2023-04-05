@@ -271,7 +271,7 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .scrollbar{
   position: fixed;
-  bottom: 1.4em;
+  bottom: 1.5em;
   left: calc(50% - 120px);
   z-index: 200;
 }
