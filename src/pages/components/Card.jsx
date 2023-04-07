@@ -3,7 +3,7 @@ import React from 'react'
 import { m } from "framer-motion";
 
 
-const Card = ({ url, src, title }) => {
+const Card = ({ url = "", src = "", title = "" }) => {
   const item = {
     hide: { y: 20, opacity: 0, filter: "blur(6px)" },
     show: { y: 0, opacity: 1, objectPosition: "0% center", filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }},
