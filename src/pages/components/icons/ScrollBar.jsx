@@ -10,8 +10,8 @@ function ScrollBar() {
     const scrolled = useTransform(scrollXProgress, [0,1], [0, 204])
 
   return (
-      <m.svg
-        className="scrollbar"
+    <m.svg
+      className="scrollbar"
       xmlns="http://www.w3.org/2000/svg"
       width="240"
       fill="none"
@@ -27,7 +27,7 @@ function ScrollBar() {
         strokeWidth="9"
         d="M4 5h291"
       ></m.path>
-          <m.path
+      <m.path
         style={{ x: scrolled }}
         initial={{ pathLength: 0, filter: "blur(18px)", opacity: 0, pathOffset: 0 }}
         animate={{ pathLength:.3,filter: "blur(0)", pathOffset: 0, opacity:[0,1,1], transition:{ delay:1.5, duration: .7, type: "easeOut" }}}
