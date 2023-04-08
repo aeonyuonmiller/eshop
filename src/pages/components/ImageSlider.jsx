@@ -13,19 +13,12 @@ function ImageSlider() {
     show: { transition: { staggerChildren: 0.1, delayChildren: .7 }},
     exit: { opacity: 0 },
   }
-  
-  const item = {
-    hide: { y: 20, opacity: 0, filter: "blur(8px)" },
-    show: { y: 0, opacity: 1, objectPosition: "0% center", filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }},
-    leave: {scale:1,objectPosition: "0% center"},
-    hover: { scale: 1.1, objectPosition: "100% center", transition: { ease: [.98, 0, .2, 1.01], duration: 1 } },
-  }
 
   return (
     <>
     <ScrollBar ref={ref} />
 
-      <m.div ref={ref} className="slider" initial="hide" animate="show" exit="exit" variants={group} data-mouse-down-at="0" data-prev-percentage="0">
+      <m.div layoutScroll ref={ref} className="slider" initial="hide" animate="show" exit="exit" variants={group} data-mouse-down-at="0" data-prev-percentage="0">
         <Card src="./cube.png" url="product" title="cube" price="80,00 €" />
         <Card src="./glas.png" url="product" title="glas" price="120,00 €" />
         <Card src="./lava.png" url="product" title="lava" price="500,00 €" />
