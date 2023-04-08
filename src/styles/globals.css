@@ -238,7 +238,7 @@ a:hover{ opacity:1; cursor: pointer; }
   display: flex;
   gap: 30vw;
   position: absolute;
-  transform: translate(0, 45%);
+  transform: translate(0, 50%);
   user-select: none;
   overflow: visible;
   scroll-snap-type: x mandatory;
