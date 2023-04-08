@@ -309,20 +309,27 @@ a:hover{ opacity:1; cursor: pointer; }
   }
   .slider {
     top: 0;
-    transform: translate(0%, 20%);
+    transform: translate(0%, 70%);
     gap: 16vmin;
   }
   .card {
-    height: 60vmin;
-    width: 60vmin;
+    height: 40vmin;
+    width: 40vmin;
     object-fit: cover;
-    object-position: 0% center;
   }
   .card:first-child {
     margin-left: calc(50vw - 30vmin);
   }
   .card:last-child {
     margin-right: calc(50vw - 30vmin);
+  }
+  .card .content {
+    position: absolute;
+    bottom: -4em;
+    width: 40vmin;
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
   }
   .close{
       position: fixed;
