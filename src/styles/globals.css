@@ -264,7 +264,7 @@ a:hover{ opacity:1; cursor: pointer; }
 } 
 
 .card {
-  scroll-snap-align: center;
+  scroll-snap-align: start;
   height: 50vmin;
   width: 50vmin;
   overflow: hidden;
