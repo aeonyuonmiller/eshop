@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from "next/head";
+import CloseButton from './components/icons/CloseButton'
 
 const product = () => {
   return (
@@ -10,7 +11,9 @@ const product = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        product
+      product
+      
+      <CloseButton />
     </>
   )
 }

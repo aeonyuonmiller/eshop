@@ -52,7 +52,7 @@ p {
 
 nav{
   position: fixed;
-  bottom: 0;
+  bottom: -1.5em;
   left: 0;
   padding-top: 2em;
   width: 100%;
@@ -89,7 +89,6 @@ a:hover{ opacity:1; cursor: pointer; }
   position: relative;
   padding: 4px 8px;
 }
-
 .underline::after {
   content: '';
   position: absolute;
@@ -102,7 +101,6 @@ a:hover{ opacity:1; cursor: pointer; }
   transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1);
   z-index: -1;
 }
-
 @media (hover: hover) and (pointer: fine) {
   .underline:hover::after {
     left: 0;
@@ -238,12 +236,12 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .slider {
   display: flex;
-  gap: 28vw;
+  gap: 30vw;
   position: absolute;
-  align-items: center;
-  transform: translate(0, 50%);
+  transform: translate(0, 45%);
   user-select: none;
   overflow: visible;
+  scroll-snap-type: x mandatory;
 }
 
 .placeholder{
@@ -265,11 +263,18 @@ a:hover{ opacity:1; cursor: pointer; }
   width: 0 !important;
 } 
 
-.card{
+.card {
   scroll-snap-align: center;
   height: 50vmin;
   width: 50vmin;
   overflow: hidden;
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 .card .image{
   object-fit: cover;
@@ -291,7 +296,7 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .scrollbar{
   position: fixed;
-  bottom: 1.5em;
+  bottom: 4em;
   left: calc(50% - 120px);
   z-index: 200;
 }

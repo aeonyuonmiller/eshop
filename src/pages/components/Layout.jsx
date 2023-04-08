@@ -4,7 +4,7 @@ import { m } from "framer-motion";
 const Layout = ({ children, bgColor }) => {
 
   const bg = {
-      backgroundColor: `${bgColor}`,
+    backgroundColor: `${bgColor}`,
     };
   
   return (

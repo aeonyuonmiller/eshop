@@ -18,12 +18,12 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
   }
     
     return (
-        <div className='card'>
+        <m.div className="card" variants={copy} initial="hide" animate="show" exit="leave">
             <Link tabIndex="1" aria-labelledby={title} prefetch href={url}>
                 <m.img loading="lazy" className="image" variants={item} draggable="false" src={src} animate={{ scale: 1, objectPosition: "0% center", transition: { type: "spring", damping: 18 } }} whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type: "spring", damping: 18 } }} />
                 <m.div variants={copy} className='content'><span>{title}</span><strong>{price}</strong></m.div>
             </Link>
-        </div>
+        </m.div>
     )
 }
 
