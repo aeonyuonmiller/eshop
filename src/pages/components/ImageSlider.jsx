@@ -9,7 +9,7 @@ function ImageSlider() {
   const group = {
     hide: {},
     hover: {},
-    show: { transition: { staggerChildren: 0.1, delayChildren: .7 }},
+    show: { opacity: 1, transition: { staggerChildren: 0.1, delayChildren: .7 }},
     exit: { opacity: 0 },
   }
 
@@ -17,7 +17,7 @@ function ImageSlider() {
     <>
     <ScrollBar ref={ref} />
 
-      <m.div ref={ref} className="slider" initial="hide" animate="show" exit="exit" variants={group} data-mouse-down-at="0" data-prev-percentage="0">
+      <m.div ref={ref} className="slider" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} data-mouse-down-at="0" data-prev-percentage="0">
         <Card src="./cube.png" url="product" title="cube" price="80,00 €" />
         <Card src="./glas.png" url="product" title="glas" price="120,00 €" />
         <Card src="./lava.png" url="product" title="lava" price="500,00 €" />

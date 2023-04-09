@@ -240,8 +240,7 @@ a:hover{ opacity:1; cursor: pointer; }
   position: absolute;
   transform: translate(0, 50%);
   user-select: none;
-  overflow: visible;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 .placeholder{
@@ -265,6 +264,7 @@ a:hover{ opacity:1; cursor: pointer; }
 
 .card {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   height: 50vmin;
   width: 50vmin;
   overflow: hidden;
@@ -289,6 +289,26 @@ a:hover{ opacity:1; cursor: pointer; }
   font-size: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+/* CARD TWO */
+section.cardtwo{
+  scroll-snap-align: center;
+}
+
+.cardtwo *{
+border: 1px solid red;
+}
+
+.cardtwo img{
+  height: 50vmin;
+}
+
+.content2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
 }
 
 .slider .card:first-child { margin-left: calc(50vw - 25vmin); }

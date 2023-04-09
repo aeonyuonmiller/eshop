@@ -18,13 +18,13 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
   }
     
     return (
-        <m.section className="card" variants={item} initial="hide" animate="show" exit="leave">
+        <m.section className="card" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
           <Link tabIndex="1" aria-labelledby={title} prefetch href={url}>
             <m.img loading="lazy" className="image" variants={item} draggable="false" src={src} animate={{ scale: 1, objectPosition: "0% center", transition: { type: "spring", damping: 18 } }} whileHover={{ scale: 1.1, objectPosition: "100% center", transition: { type: "spring", damping: 18 } }} />
-            <m.div variants={copy} initial="hide" animate="show" exit="leave" className='content'>
-              <m.span initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>{title}</m.span>
-              <m.strong initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}>{price}</m.strong>
-            </m.div>
+            <div className='content'>
+              <m.span initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>{title}</m.span>
+              <m.strong initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>{price}</m.strong>
+            </div>
           </Link>
         </m.section>
     )
