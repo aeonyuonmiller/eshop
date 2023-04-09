@@ -19,7 +19,7 @@ function ScrollBar() {
     >
       <m.path
         initial={{ pathLength: 0, opacity: 0, pathOffset: 0 }}
-        animate={{ pathLength:1, opacity:[0,1,1], pathOffset: 0, transition:{ delay:1.5, duration: .7, type: "easeOut" }}}
+        animate={{ pathLength:1, opacity:[0,1,1], pathOffset: 0, transition:{ delay:1, duration: .7, type: "easeOut" }}}
         exit={{ pathLength:0, pathOffset: 1, x: 20, transition:{ delay:0, duration: .6, type: "easeIn" }}}
         stroke="#000"
         strokeLinecap="round"
