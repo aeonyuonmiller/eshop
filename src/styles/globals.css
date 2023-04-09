@@ -239,8 +239,8 @@ a:hover{ opacity:1; cursor: pointer; }
   gap: 30vw;
   position: absolute;
   transform: translate(0, 50%);
-  user-select: none;
   scroll-snap-type: y mandatory;
+  user-select: none;
 }
 
 .placeholder{
@@ -274,7 +274,6 @@ a:hover{ opacity:1; cursor: pointer; }
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   100px 100px 80px rgba(0, 0, 0, 0.07);
   scroll-snap-align: center;
-  scroll-snap-stop: always;
 }
 .card .image{
   object-fit: cover;
@@ -308,8 +307,7 @@ a:hover{ opacity:1; cursor: pointer; }
     padding: 8em 5% 6em 5%;
   }
   .slider {
-    top: 0;
-    transform: translate(0%, 70%);
+    top: 10vmin;
     gap: 30vw;
   }
   .card {
@@ -325,7 +323,7 @@ a:hover{ opacity:1; cursor: pointer; }
   }
   .card .content {
     position: absolute;
-    bottom: -4em;
+    bottom: -3em;
     width: 40vmin;
     font-size: 10px;
     display: flex;
