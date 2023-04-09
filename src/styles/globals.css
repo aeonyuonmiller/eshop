@@ -237,7 +237,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
 .slider {
   position: absolute;
   display: flex;
-  gap: 30vw;
+  gap: 32vw;
   transform: translate(0, 50%);
   user-select: none;
   scroll-snap-type: x mandatory;
