@@ -65,7 +65,7 @@ nav{
 }
 
 nav a{
-  font-size: 10px;
+  font-size: 6px;
 }
 
 nav a { 
@@ -235,12 +235,13 @@ nav a:hover{ opacity:1; cursor: pointer; }
 }
 
 .slider {
+  position: absolute;
   display: flex;
   gap: 30vw;
-  position: absolute;
   transform: translate(0, 50%);
   user-select: none;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
+
 }
 
 .slider::-webkit-scrollbar {
@@ -295,8 +296,8 @@ nav a:hover{ opacity:1; cursor: pointer; }
     padding: 8em 5% 6em 5%;
   }
   .slider {
-    top: 10vmin;
-    gap: 30vw;
+    top: calc(50% - 40vmin);
+    gap: 25vw;
   }
   .card {
     height: 40vmin;
