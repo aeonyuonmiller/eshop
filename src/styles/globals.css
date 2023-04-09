@@ -273,7 +273,7 @@ a:hover{ opacity:1; cursor: pointer; }
   22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
   41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
   100px 100px 80px rgba(0, 0, 0, 0.07);
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   scroll-snap-stop: always;
 }
 .card .image{
@@ -289,26 +289,6 @@ a:hover{ opacity:1; cursor: pointer; }
   font-size: 10px;
   display: flex;
   justify-content: space-between;
-}
-
-/* CARD TWO */
-section.cardtwo{
-  scroll-snap-align: center;
-}
-
-.cardtwo *{
-border: 1px solid red;
-}
-
-.cardtwo img{
-  height: 50vmin;
-}
-
-.content2{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1em;
 }
 
 .slider .card:first-child { margin-left: calc(50vw - 25vmin); }
