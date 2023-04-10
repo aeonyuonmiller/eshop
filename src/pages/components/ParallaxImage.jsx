@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const ParallaxImage = ({ imageUrl }) => {
   // Get the viewport scroll position
-  const { scrollYProgress } = useScroll();
+  const { scrollXProgress } = useScroll();
 
   // Define the x-axis transform
   const xRange = [0, 1];

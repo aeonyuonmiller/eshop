@@ -23,7 +23,7 @@ function Nav () {
           <m.span variants={item}><Link scroll={false} tabIndex={2} className="underline" href="/contact">contact</Link></m.span>        
         </m.div>
         
-        <m.span initial={{ opacity: 0, scale: 0, y: 50 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ delay: 1.2, duration: 0.4 }}>
+        <m.span initial={{ opacity: 0, scale: 0, y: 50 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ delay: 1, duration: 0.4 }}>
           <Link scroll={false} href="/" tabIndex={1}>
             <div className="cart-icon"><span>🧺</span></div>
           </Link>
