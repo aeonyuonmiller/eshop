@@ -296,7 +296,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
     padding: 8em 5% 6em 5%;
   }
   .slider {
-    top: calc(50% - 40vmin);
+    top: calc(50vh - 40vmin);
     gap: 25vw;
   }
   .card {
