@@ -1,39 +1,42 @@
 import React from 'react'
 import { m } from "framer-motion";
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 function Nav () {
-    const group = {
-        hide: { },
-        show: { transition:{ staggerChildren:0.1, delayChildren:0.5 }}
-      }
-  
-      const item = {
-        hide: { y: 20, opacity: 0, filter: "blur(6px)" },
-        show: { y: 0, opacity: 1, filter: "blur(0)", transition:{ ease: [.98,0,.2,1.01], duration: .6 }}
-    }
+  const router = useRouter();
+  const currentRoute = router.pathname;
 
   return (
     <>
-      <nav>
-        <m.div initial="hide" animate="show" variants={group}>
-          <m.span variants={item}><Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link></m.span>
-          <m.span variants={item}><Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link></m.span>
-          <m.span variants={item}><Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link></m.span>
-          <m.span variants={item}><Link scroll={false} tabIndex={2} className="underline" href="/contact">contact</Link></m.span>        
-        </m.div>
+      {currentRoute === '/' ? 
+      <m.nav initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0, transition:{ ease: "circOut", delay: 1 ,duration: 0.2 }}} exit={{ y: "100%", transition:{ duration: 0.4 }}}>
+        <div>
+          <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
+          <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
+          <Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link>
+        </div>
         
-        <m.span initial={{ opacity: 0, scale: 0, y: 50 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ delay: 1, duration: 0.4 }}>
+        <span>
           <a className='snipcart-checkout' href="/" tabIndex={1}>
             <div className="cart-icon"><span>🧺</span></div>
           </a>
-        </m.span>
-      </nav>
-
-      {/* <div className='cart'>
-        Shirt Raglan Basic oversize
-        150 €
-      </div> */}
+        </span>
+        </m.nav>
+        : 
+        <m.nav animate={{ opacity: 0, y: 100, transition:{ ease: "circOut", delay: 1 ,duration: 0.2 }}}>
+          <div>
+            <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
+            <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
+            <Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link>
+          </div>
+          <span>
+            <a className='snipcart-checkout' href="/" tabIndex={1}>
+              <div className="cart-icon"><span>🧺</span></div>
+            </a>
+          </span>
+        </m.nav>
+      }
     </>
   )
 }
