@@ -262,7 +262,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 12vh;
+  bottom: 4em;
   left: calc(50vw - 20px);
   backdrop-filter: blur(10px);
   background-color: #a4a4a441;
