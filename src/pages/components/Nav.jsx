@@ -24,7 +24,7 @@ function Nav () {
         </span>
         </m.nav>
         : 
-        <m.nav animate={{ opacity: 0, y: 100, transition:{ ease: "circOut", delay: 1 ,duration: 0.2 }}}>
+        <m.nav animate={{ opacity: 0, y: 100, transition:{ ease: "circOut", duration: 0.2 }}}>
           <div>
             <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
             <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
