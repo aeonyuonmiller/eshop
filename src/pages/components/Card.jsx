@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image';
 import React from 'react'
 import { m } from "framer-motion";
 
@@ -19,15 +18,15 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
   }
     
     return (
-        <m.section className="card" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}>
+        <section className="card">
           <Link tabIndex="1" aria-labelledby={title} prefetch href={url} scroll={false}>
             <m.img loading="lazy" className="image" variants={item} draggable="false" src={src} animate={{ scale: 1, objectPosition: "0% center", transition: { type: "spring", damping: 18 } }} whileHover={{ scale: 1.05, objectPosition: "100% center", transition: { type: "spring", damping: 18 }}} />
             <m.div className='content' viewport={{ amount: 1 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>
               <span>{title}</span>
-              <strong>{price}</strong>
+              <span>{price}</span>
             </m.div>
           </Link>
-        </m.section>
+        </section>
     )
 }
 
