@@ -64,9 +64,6 @@ nav{
   backdrop-filter: blur(4px);
   transition: all ease .8s;
 }
-nav.inactive{
-  transform: translateY(100px);
-}
 nav a { 
   color: var(--secondary);
   text-transform: uppercase;
@@ -207,20 +204,24 @@ nav a:hover{ opacity:1; cursor: pointer; }
   justify-content: center;
   align-items: center;
 }
-
+.slider-container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.slider-container::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
 .slider {
   position: absolute;
   display: flex;
   gap: 32vw;
   transform: translate(0, 50%);
   user-select: none;
-  scroll-snap-type: x mandatory;
 }
-
-.slider::-webkit-scrollbar {
-  display: none;
-  width: 0 !important;
-} 
 
 .card {
   height: 50vmin;
@@ -286,6 +287,9 @@ nav a:hover{ opacity:1; cursor: pointer; }
   .slider {
     top: calc(50vh - 40vmin);
     gap: 25vw;
+  }
+  .scrollbar {
+    top: 10%;
   }
   .card {
     height: 40vmin;
