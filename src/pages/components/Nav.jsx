@@ -15,6 +15,8 @@ function Nav () {
           <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
           <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
           <Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link>
+          <Link scroll={false} tabIndex={2} className="underline" href="/imprint">imprint</Link>
+
         </div>
         
         <span>
@@ -29,6 +31,7 @@ function Nav () {
             <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
             <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
             <Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link>
+            <Link scroll={false} tabIndex={2} className="underline" href="/imprint">imprint</Link>
           </div>
           <span>
             <a className='snipcart-checkout' href="/" tabIndex={1}>

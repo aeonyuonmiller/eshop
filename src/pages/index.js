@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import { m } from "framer-motion";
@@ -9,6 +10,8 @@ import ImageSlider from "./components/ImageSlider";
 import Card from "./components/Card";
 
 export default function Home() {
+  const ref = useRef(null);
+
   return (
     <>
       <Head>
@@ -32,7 +35,7 @@ export default function Home() {
         <Logo />
       </m.div>
 
-      <ImageSlider>
+      <ImageSlider ref={ref}>
         <Card src="./cube.png" url="product" title="cube" price="80,00 €" />
         <Card src="./glas.png" url="product" title="glas" price="120,00 €" />
         <Card src="./lava.png" url="product" title="lava" price="500,00 €" />

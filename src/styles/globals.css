@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
   width: 0 !important;
 }
 
-h1 { 
+h1{ 
   font-size: 8px;
   font-weight: 800;
   text-transform: uppercase; 
@@ -205,9 +205,10 @@ nav a:hover{ opacity:1; cursor: pointer; }
   align-items: center;
 }
 .slider-container{
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 100vh;
+  height: 100dvh;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
@@ -218,7 +219,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
 .slider {
   position: absolute;
   display: flex;
-  gap: 32vw;
+  gap: 30vw;
   transform: translate(0, 50%);
   user-select: none;
 }
@@ -254,7 +255,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   position: fixed;
   top: 4em;
   left: calc(50% - 120px);
-  z-index: 200;
+  z-index: 20;
 }
 
 .close {
@@ -275,7 +276,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   letter-spacing: 2px;
   font-weight: 600;
   color: white;
-  z-index: 200;
+  z-index: 20;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -285,11 +286,11 @@ nav a:hover{ opacity:1; cursor: pointer; }
     padding: 8em 8% 4em 8%;
   }
   .slider {
-    top: calc(50vh - 40vmin);
-    gap: 25vw;
+    top: calc(50vh - 50vmin);
+    gap: 22vw;
   }
   .scrollbar {
-    top: 10%;
+    top: 5%;
   }
   .card {
     height: 40vmin;
@@ -304,12 +305,19 @@ nav a:hover{ opacity:1; cursor: pointer; }
   }
   .card .content {
     position: absolute;
-    bottom: -3em;
+    bottom: -6em;
     width: 40vmin;
-    font-size: 10px;
+    font-size: 12px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: .6em;
   }
+  nav a { 
+    font-size: 12px;
+    letter-spacing: 0.17em;
+    margin-right: 1rem; 
+}
 }
 
 @media only screen and (max-width: 550px) {
