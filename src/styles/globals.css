@@ -248,9 +248,9 @@ nav a:hover{ opacity:1; cursor: pointer; }
   justify-content: space-between;
 }
 .card .content span:first-child {
-  transition: color ease .6s .1s;
+  transition: all ease .6s;
 }
-.card:hover .content span:first-child{ color: #515151; }
+.card:hover .content span:first-child{ letter-spacing: 4px; }
 
 .slider .card:first-child { margin-left: calc(50vw - 25vmin); }
 .slider .card:last-child { margin-right: calc(50vw - 25vmin); }
