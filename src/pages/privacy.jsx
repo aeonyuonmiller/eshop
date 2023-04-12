@@ -14,7 +14,7 @@ const privacy = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout bgColor="#1a1a1a">
+      <Layout bgColor="#00406b">
         <h1>Privacy</h1>
         <m.span initial={{y: 30, opacity: 0}} animate={{y: 0, opacity:1, transition:{ease: [.3,0,.2,1.01], duration: 1.2, delay: .4}}} exit={{y: -30, opacity: 0, transition:{ease: [.3,0,.2,1.01], duration: .6}}}>
           <h5>Privacy Policy</h5>

@@ -247,6 +247,10 @@ nav a:hover{ opacity:1; cursor: pointer; }
   display: flex;
   justify-content: space-between;
 }
+.card .content span:first-child {
+  transition: color ease .6s .1s;
+}
+.card:hover .content span:first-child{ color: #515151; }
 
 .slider .card:first-child { margin-left: calc(50vw - 25vmin); }
 .slider .card:last-child { margin-right: calc(50vw - 25vmin); }
@@ -267,7 +271,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   bottom: 4em;
   left: calc(50vw - 20px);
   backdrop-filter: blur(10px);
-  background-color: #a4a4a441;
+  background-color: #8d8d8d79;
   height: 40px;
   width: 40px;
   border-radius: 50%;
