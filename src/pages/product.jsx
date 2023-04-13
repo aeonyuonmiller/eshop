@@ -25,6 +25,7 @@ const product = () => {
       </ImageSlider>
 
       <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
+        <div className="price">79.99 €</div>
         <button className="snipcart-add-item"
           data-item-id="starry-night"
           data-item-price="79.99"
@@ -38,7 +39,6 @@ const product = () => {
         </button>
       </m.span>
 
-      <div className="price">79.99 €</div>
       
       <CloseButton />
     </>
