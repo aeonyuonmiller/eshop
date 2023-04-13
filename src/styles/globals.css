@@ -268,7 +268,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   object-position: center;
 }
 .product-display img{
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   object-fit: cover;
   margin: auto;
@@ -278,10 +278,24 @@ nav a:hover{ opacity:1; cursor: pointer; }
 .slider .product-display:first-child { margin-left: calc(50vw - 50vh); }
 .slider .product-display:last-child { margin-right: calc(50vw - 50vh); }
 
- 
+.product-title{
+  position: relative;
+  color: white;
+  top: calc(50vh - .5em);
+}
+
+.price{
+  position: relative;
+  left: calc(50vw + 3em);
+  top: calc(100vh - 5.6em);
+  width: fit-content;
+  color: whitesmoke;
+  font-size: 12px;
+}
+
 .scrollbar{
   position: fixed;
-  top: 4em;
+  top: 2em;
   left: calc(50% - 120px);
   z-index: 20;
 }
