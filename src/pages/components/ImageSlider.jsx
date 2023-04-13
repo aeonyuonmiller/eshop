@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import { m, useScroll, useTransform } from "framer-motion";
-// import ScrollBar from "./icons/ScrollBar";
 
 function ImageSlider({ children}) {
   const ref = useRef(null);
@@ -13,8 +12,7 @@ function ImageSlider({ children}) {
   return (
     
     <>
-      {/* <ScrollBar /> */}
-       <svg
+    <svg
       className="scrollbar"
       xmlns="http://www.w3.org/2000/svg"
       width="240"
