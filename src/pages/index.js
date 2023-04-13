@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import { m } from "framer-motion";
+import { m, useScroll } from "framer-motion";
 const inter = Inter({ subsets: ["latin"] });
 
 // components
@@ -11,6 +11,7 @@ import Card from "./components/Card";
 
 export default function Home() {
   const ref = useRef(null);
+  const { scrollXProgress } = useScroll({ container: ref });
 
   return (
     <>
@@ -36,9 +37,9 @@ export default function Home() {
       </m.div>
 
       <ImageSlider ref={ref}>
-        <Card src="./cube.png" url="product" title="cube" price="80,00 €" />
-        <Card src="./glas.png" url="product" title="glas" price="120,00 €" />
-        <Card src="./lava.png" url="product" title="lava" price="500,00 €" />
+        <Card src="./cube.png" url="/product" title="cube" price="80,00 €" />
+        <Card src="./glas.png" url="/product" title="glas" price="120,00 €" />
+        <Card src="./lava.png" url="/product" title="lava" price="500,00 €" />
         <Card
           src="./mirror.png"
           url="product"

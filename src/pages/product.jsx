@@ -17,23 +17,25 @@ const product = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
+      <ImageSlider>
+        <Card src="./glas.png" url="/" title="cube" price="80,00 €" />
+        <Card src="./glas.png" url="/" title="side-view everything you could wish for in a handbag this size." price="" />
+        <Card src="./glas.png" url="/" title="inside-view" price="500,00 €" />
+      </ImageSlider>
+
+            <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
       <button className="snipcart-add-item"
         data-item-id="starry-night"
         data-item-price="79.99"
         data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
         data-item-image="/cube.png"
         data-item-name="Cube"
-        data-item-custom1-name="Frame color"
-        data-item-custom1-options="Black|White"
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL"
       >
-        add to cart</button></m.span>
-
-      <ImageSlider>
-        <Card src="./cube.png" url="/" title="description" price="80,00 €" />
-        <Card src="./cube.png" url="/" title="side-view everything you could wish for in a handbag this size." price="" />
-        <Card src="./cube.png" url="/" title="inside-view" price="500,00 €" />
-      </ImageSlider>
+          add to cart
+        </button>
+      </m.span>
       
       <CloseButton />
     </>

@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { m, useScroll, useTransform } from "framer-motion"
 
-function ScrollBar() {
-    const target = useRef(null);
+function ScrollBar({}) {
+    const ref = useRef(null);
     const { scrollXProgress } = useScroll({
-        target,
+        container: ref,
         offset: ["start end", "end start"],
     })
     const scrolled = useTransform(scrollXProgress, [0,1], [0, 204])
