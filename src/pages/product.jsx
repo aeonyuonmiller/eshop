@@ -18,25 +18,27 @@ const product = () => {
       </Head>
 
       <ImageSlider>
-        <Product src="./hoodie.png" title="cube" />
-        <Product src="./hoodie.png" title="cube" />
-        <Product src="./hoodie.png" title="cube" />
-        <Product src="./hoodie.png" title="cube" />
+        <Product src="./hoodie.png" title="Backside" />
+        <Product src="./hoodie-front.png" title="Front with small print" />
+        <Product src="./shirt.png" title="cube" />
+        <Product src="./hoodie.png" title="neuer mensch air max" />
       </ImageSlider>
 
-            <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
-      <button className="snipcart-add-item"
-        data-item-id="starry-night"
-        data-item-price="79.99"
-        data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-        data-item-image="/hoodie.png"
-        data-item-name="Hoodie"
-        data-item-custom1-name="Size"
-        data-item-custom1-options="S|M|L|XL"
-      >
+      <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
+        <button className="snipcart-add-item"
+          data-item-id="starry-night"
+          data-item-price="79.99"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-image="/hoodie.png"
+          data-item-name="Hoodie"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="S|M|L|XL"
+        >
           add to cart
         </button>
       </m.span>
+
+      <div className="price">79.99 €</div>
       
       <CloseButton />
     </>

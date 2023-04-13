@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
 import { m, useScroll, useTransform } from "framer-motion";
 
-function ImageSlider({ children}) {
+function ImageSlider({ children }) {
   const ref = useRef(null);
   const { scrollXProgress } = useScroll({
       container: ref,
       offset: ["start end", "end start"],
   })
-  const scrolled = useTransform(scrollXProgress, [0,1], [0, 204])
+  const scrolled = useTransform(scrollXProgress, [0, 1], [0, 204])
 
   return (
-    
     <>
     <m.svg
       initial={{ opacity: 0 }}

@@ -11,10 +11,8 @@ const Product = ({ src = "", title = "" }) => {
     
     return (
         <m.section layoutId={title} className="product-display">
+            <m.div variants={item} initial="hide" whileInView="show" exit="leave" className="product-title">{title}</m.div>
             <m.img loading="lazy" variants={item} draggable="false" src={src}/>
-            <m.div className='content' viewport={{ amount: 1 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>
-              <span>{title}</span>
-            </m.div>
         </m.section>
     )
 }
