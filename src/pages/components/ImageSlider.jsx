@@ -27,7 +27,7 @@ function ImageSlider({ children}) {
         exit={{ pathLength:0, pathOffset: 1, x: 20, transition:{ delay:0, duration: .6, type: "easeIn" }}}
         stroke="#000"
         strokeLinecap="round"
-        strokeOpacity="0.2"
+        strokeOpacity="0.16"
         strokeWidth="9"
         d="M4 5h291"
       ></m.path>
