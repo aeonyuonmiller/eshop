@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 // components
 import Logo from "./components/icons/Logo";
-import ImageSlider from "./components/ImageSlider";
+import ImageSlider from "./components/Slider";
 import Card from "./components/Card";
 
 export default function Home() {
