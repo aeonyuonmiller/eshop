@@ -3,9 +3,9 @@ import Head from "next/head";
 import { m } from "framer-motion";
 
 // components
-import ImageSlider from "./components/ImageSlider";
+import ImageSlider from "./components/Slider";
 import CloseButton from './components/icons/CloseButton'
-import Card from "./components/Card";
+import Product from "./components/Product";
 
 const product = () => {
   return (
@@ -18,9 +18,10 @@ const product = () => {
       </Head>
 
       <ImageSlider>
-        <Card src="./glas.png" url="/" title="cube" price="80,00 €" />
-        <Card src="./glas.png" url="/" title="side-view everything you could wish for in a handbag this size." price="" />
-        <Card src="./glas.png" url="/" title="inside-view" price="500,00 €" />
+        <Product src="./glas.png" title="cube" />
+        <Product src="./glas.png" title="cube" />
+        <Product src="./glas.png" title="cube" />
+        <Product src="./glas.png" title="cube" />
       </ImageSlider>
 
             <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
