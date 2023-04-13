@@ -14,7 +14,7 @@ function ImageSlider({ children}) {
     
     <>
       {/* <ScrollBar /> */}
-       <m.svg
+       <svg
       className="scrollbar"
       xmlns="http://www.w3.org/2000/svg"
       width="240"
@@ -41,7 +41,7 @@ function ImageSlider({ children}) {
         strokeWidth="3"
         d="M4 5h291"
       />
-    </m.svg>
+    </svg>
       
       <div className="slider-container" ref={ref}>
          <m.div className="slider" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
