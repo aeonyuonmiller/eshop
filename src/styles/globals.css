@@ -286,11 +286,12 @@ nav a:hover{ opacity:1; cursor: pointer; }
 
 .price{
   position: relative;
-  left: calc(50vw + 3em);
-  top: calc(100vh - 5.6em);
+  left: calc(50vw + 3rem);
+  top: calc(100vh - 4.6em);
   width: fit-content;
   color: whitesmoke;
-  font-size: 12px;
+  font-size: 10px;
+  letter-spacing: 3px;
 }
 
 .scrollbar{
@@ -306,7 +307,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 4em;
+  bottom: 2em;
   left: calc(50vw - 20px);
   backdrop-filter: blur(10px);
   background-color: #8d8d8d79;
