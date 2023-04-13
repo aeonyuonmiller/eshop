@@ -18,10 +18,10 @@ const product = () => {
       </Head>
 
       <ImageSlider>
-        <Product src="./glas.png" title="cube" />
-        <Product src="./glas.png" title="cube" />
-        <Product src="./glas.png" title="cube" />
-        <Product src="./glas.png" title="cube" />
+        <Product src="./hoodie.png" title="cube" />
+        <Product src="./hoodie.png" title="cube" />
+        <Product src="./hoodie.png" title="cube" />
+        <Product src="./hoodie.png" title="cube" />
       </ImageSlider>
 
             <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
@@ -29,8 +29,8 @@ const product = () => {
         data-item-id="starry-night"
         data-item-price="79.99"
         data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-        data-item-image="/cube.png"
-        data-item-name="Cube"
+        data-item-image="/hoodie.png"
+        data-item-name="Hoodie"
         data-item-custom1-name="Size"
         data-item-custom1-options="S|M|L|XL"
       >
