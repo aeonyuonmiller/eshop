@@ -44,7 +44,12 @@ export default function Home() {
           price="80,00 €"
         />
         <Card src="./shirt.png" url="/product" title="glas" price="120,00 €" />
-        <Card src="./lava.png" url="/product" title="lava" price="500,00 €" />
+        <Card
+          src="./lava.png"
+          url="/product"
+          title="Faux-Silk"
+          price="500,00 €"
+        />
         <Card
           src="./mirror.png"
           url="product"
