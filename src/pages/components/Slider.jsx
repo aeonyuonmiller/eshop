@@ -12,6 +12,7 @@ function ImageSlider({ children }) {
   return (
     <>
     <m.svg
+    layout
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition:{ duration: .2, type: "ease" } }}
       exit={{ opacity:0, transition:{ delay:.6, duration: .1, type: "ease" }}}  
@@ -22,6 +23,8 @@ function ImageSlider({ children }) {
       viewBox="0 0 300 10"
     >
       <m.path
+        layout
+        layoutId="scrollzie"
         initial={{ pathLength: 0, opacity: 0, pathOffset: 0 }}
         animate={{ pathLength:1, opacity:[0,1,1], pathOffset: 0, transition:{ delay:.6, duration: .6, type: "easeOut" }}}
         exit={{ pathLength:0, pathOffset: .9, x: 20, transition:{ delay:0, duration: .6, type: "easeIn" }}}
@@ -32,6 +35,8 @@ function ImageSlider({ children }) {
         d="M4 5h291"
       ></m.path>
       <m.path
+        layout="position"
+        layoutId="scrollzie-indicator"
         style={{ x: scrolled }}
         initial={{ pathLength: 0, filter: "blur(18px)", opacity: 0, pathOffset: 0 }}
         animate={{ pathLength:.3, filter: "blur(0)", pathOffset: 0, opacity:[0,1,1], transition:{ delay:1.1, duration: .6, type: "easeOut" }}}
