@@ -21,7 +21,7 @@ const product = () => {
         <Product src="./hoodie-front.png" title="Front with small print" />
         <Product src="./hoodie.png" title="Backside" />
         <Product src="./hoodie-front.png" title="Faux-Silk" />
-        <Product src="./hoodie-front.png" title="neuer mensch air max" />
+        <Product src="./shirt.png" title="neuer mensch air max" />
       </ImageSlider>
 
       <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
