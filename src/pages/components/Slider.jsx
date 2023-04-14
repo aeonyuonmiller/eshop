@@ -23,7 +23,7 @@ function ImageSlider({ children }) {
     >
       <m.path
         initial={{ pathLength: 0, opacity: 0, pathOffset: 0 }}
-        animate={{ pathLength:1, opacity:[0,1,1], pathOffset: 0, transition:{ delay:1, duration: .7, type: "easeOut" }}}
+        animate={{ pathLength:1, opacity:[0,1,1], pathOffset: 0, transition:{ delay:.6, duration: .6, type: "easeOut" }}}
         exit={{ pathLength:0, pathOffset: .9, x: 20, transition:{ delay:0, duration: .6, type: "easeIn" }}}
         stroke="#000"
         strokeLinecap="round"
@@ -34,7 +34,7 @@ function ImageSlider({ children }) {
       <m.path
         style={{ x: scrolled }}
         initial={{ pathLength: 0, filter: "blur(18px)", opacity: 0, pathOffset: 0 }}
-        animate={{ pathLength:.3, filter: "blur(0)", pathOffset: 0, opacity:[0,1,1], transition:{ delay:1.5, duration: .7, type: "easeOut" }}}
+        animate={{ pathLength:.3, filter: "blur(0)", pathOffset: 0, opacity:[0,1,1], transition:{ delay:1.1, duration: .6, type: "easeOut" }}}
         exit={{ pathLength: .3, pathOffset: [null, .3], opacity: 0, transition: { delay: 0, duration: .2 } }}
         stroke="#ededed"
         strokeLinecap="round"
