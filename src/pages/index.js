@@ -26,7 +26,7 @@ export default function Home() {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{
-          y: -150,
+          y: -100,
           opacity: 0,
           transition: { ease: [0.98, 0, 0.2, 1.01], duration: 0.8 },
         }}
