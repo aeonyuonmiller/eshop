@@ -20,7 +20,7 @@ const product = () => {
       <ImageSlider>
         <Product src="./hoodie-front.png" title="Front with small print" />
         <Product src="./hoodie.png" title="Backside" />
-        <Product src="./hoodie-front.png" title="cube" />
+        <Product src="./hoodie-front.png" title="Faux-Silk" />
         <Product src="./hoodie-front.png" title="neuer mensch air max" />
       </ImageSlider>
 
