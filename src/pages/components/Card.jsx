@@ -17,7 +17,7 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
     return (
         <m.section className="card">
           <Link tabIndex="1" aria-labelledby={title} prefetch href={url} scroll={false}>
-            <m.img layout layoutId="cardo" loading="lazy" className="image" variants={item} src={src}  transition="transition" animate="show" whileHover="hover" exit="exit" draggable="false" />
+            <m.img loading="lazy" className="image" variants={item} src={src}  transition="transition" animate="show" whileHover="hover" exit="exit" draggable="false" />
               <span className='sold-out'>Sold out</span>
             <m.div className='content' viewport={{ amount: 1 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>
               <span>{title}</span>
