@@ -1,9 +1,9 @@
 ## ToDo
 
-[x] Nextjs
-[x] Framer Motion
-[x] Snipcart
-[ ] MousePosition FX on card component
+- [x] Nextjs
+- [x] Framer Motion
+- [x] Snipcart
+- [ ] MousePosition FX on card component
 
 ## Current result
 
