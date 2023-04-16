@@ -275,15 +275,53 @@ nav a:hover{ opacity:1; cursor: pointer; }
 }
 .card .buy{ 
   position: absolute;
-  background: rgb(119, 119, 119);
+  border: none;
+  background: hsl(120, 98%, 30%);
   color: white;
   font-size: 6px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding: 1em 1.8em;
+  padding: 1em 1.6em;
   border-radius: 50px;
-  left: calc(50% - 35px);
+  width: fit-content;
+  left: calc(50% - 57px);
   bottom: -8em;
+  cursor: pointer;
+  z-index: 10;
+}
+.big-buy{
+  position: fixed;
+  bottom: -170px;
+  right: -170px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background: hsl(120, 98%, 30%);
+  transform: rotate(-45deg);
+  border: none;
+  font-size: 8px;
+  font-weight: 100;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 4em;
+  z-index: 10;
+  cursor: pointer;
+  transition: all ease .4s;
+} 
+.big-buy::after {
+  content: "";
+  position: absolute;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
+}
+.big-buy:hover{
+  background: hsl(120, 98%, 20%);
+  transform: translate(10px, 10px) rotate(-45deg);
 }
 .card .content span:first-child {
   transition: all ease .6s;

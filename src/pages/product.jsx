@@ -29,9 +29,9 @@ const product = () => {
 
       <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
         <div className="price">80.00 €</div>
-        <button className="snipcart-add-item"
+        <button className="snipcart-add-item big-buy"
           data-item-id="starry-night"
-          data-item-price="79.99"
+          data-item-price="80.00"
           data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
           data-item-image="/hoodie-front.png"
           data-item-name="Hoodie"
