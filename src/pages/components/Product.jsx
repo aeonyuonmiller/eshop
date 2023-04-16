@@ -1,4 +1,4 @@
-import { m, layout } from "framer-motion";
+import { m } from "framer-motion";
 
 
 const Product = ({ src = "", title = "" }) => {
@@ -21,7 +21,9 @@ const Product = ({ src = "", title = "" }) => {
       transition: { ease: [.98, 0, .2, 1.01], duration: 1 } 
     },
     leave: {
-      scale:.98, 
+      scale:.5,
+      opacity: 0,
+      transition: { ease: [.98, 0, .2, 1.01], duration: 1 }
     },
   }
     

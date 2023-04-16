@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import { m, layout } from "framer-motion";
+import { m } from "framer-motion";
 
 
 const Card = ({ url = "", src = "", title = "", price = "" }) => {
