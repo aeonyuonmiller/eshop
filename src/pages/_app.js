@@ -1,5 +1,5 @@
-import "@/styles/globals.css";
 import "@/styles/snipcart.css";
+import "@/styles/globals.css";
 import {
   LazyMotion,
   domAnimation,
