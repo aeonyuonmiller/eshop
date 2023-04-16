@@ -22,10 +22,13 @@ const product = () => {
         <Product src="./hoodie.png" title="Backside" />
         <Product src="./hoodie-front.png" title="Faux-Silk" />
         <Product src="./shirt.png" title="neuer mensch air max" />
+        <section className="product-display">
+          Material: 100% Cotton
+        </section>
       </ImageSlider>
 
       <m.span initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .8, duration: .6 } }} exit={{ opacity: 0, y: 20, transition: { duration: .6 } }}>
-        <div className="price">79.99 €</div>
+        <div className="price">80.00 €</div>
         <button className="snipcart-add-item"
           data-item-id="starry-night"
           data-item-price="79.99"
