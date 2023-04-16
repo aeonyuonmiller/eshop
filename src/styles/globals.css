@@ -269,7 +269,6 @@ nav a:hover{ opacity:1; cursor: pointer; }
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 1em 1.8em;
-  width: 90px;
   border-radius: 50px;
   left: calc(50% - 45px);
   top: -8em;
