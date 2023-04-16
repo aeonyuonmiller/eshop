@@ -1,0 +1,122 @@
+<layout v-click-outside="clickedOutside">
+        <overridable
+            name="cart"
+            section="header"
+        >
+            <cart-header
+                title="header.title_cart_summary"
+                :show-items-count="true"
+                :show-account-menu="true"
+                v-if="!editingCart"
+            ></cart-header>
+        </overridable>
+        <loading-screen
+            message="cart.loading"
+            class="snipcart-layout__content"
+            :class="layoutContentCssClasses"
+        >
+            <div
+                class="snipcart-cart__secondary-header"
+                v-if="editingCart"
+            >
+                <h1 class="snipcart__font--secondary snipcart-cart__secondary-header-title snipcart__font--bold snipcart__font--xlarge">
+                    {{ $localize("header.title_cart_summary") }}
+                </h1>
+                <close-side-cart-action :is-cart-summary="!isSideCart">
+                    <icon
+                        name="plus"
+                        class="snipcart__icon--medium snipcart__icon--angled"
+                        alt="item.remove_item"
+                    ></icon>
+                </close-side-cart-action>
+            </div>
+            <flash-message
+                class="snipcart-cart__flash-message"
+                type="error"
+                v-if="promptItemConfigurationError"
+                :title="$localize(`errors.cart_items.${itemConfigurationErrorLocale}.title`)"
+                :description="$localize(`errors.cart_items.${itemConfigurationErrorLocale}.description`)"
+                icon="box"
+            >
+                <button-link
+                    label="actions.clear_cart"
+                    @click="clearCart"
+                ></button-link>
+
+                <button-link
+                    label="actions.dismiss"
+                    @click="dismissItemConfigurationError"  
+                ></button-link>
+            </flash-message>
+            <overridable
+                name="cart"
+                v-if="hasItems"
+            >
+                <section class="snipcart-cart__content">
+                    <item-list
+                        item-template="item-line"
+                        class="snipcart-item-list--no-shadow"
+                        :show-description="!isSideCart"
+                    >
+                        <template
+                            v-slot:footer
+                            v-if="isSideCart && hasActiveDiscountsTriggerableByCode"
+                        >
+                            <li class="snipcart-item-line snipcart-item-line--cart-edit">
+                                <div class="snipcart-item-line__container">
+                                    <discount-box class="snipcart-cart__discount-box"></discount-box>
+                                </div>
+                            </li>
+                        </template>
+                    </item-list>
+                    <div class="snipcart-cart__footer">
+                        <div class="snipcart-cart__footer-col cart__footer-discount-box snipcart-cart__actions">
+                            <discount-box
+                                v-if="!isSideCart && hasActiveDiscountsTriggerableByCode"
+                                class="snipcart-cart__discount-box"
+                            ></discount-box>
+                        </div>
+
+                        <div class="snipcart-cart__footer-col">
+                            <summary-fees
+                                class="snipcart-cart-summary-fees--reverse"
+                                :summary-data="summaryFeesProvider"
+                            >
+                                {{ $localize('cart.shipping_taxes_calculated_at_checkout')}}
+                            </summary-fees>
+
+                            <footer v-if="!editingCart || isSideCart" class="snipcart-cart__footer-buttons">
+                                <flash-message
+                                    type="error"
+                                    v-if="errors != null"
+                                    :title="$localize('errors.order_validation.custom_fields_validation.title')"
+                                >
+                                    {{$localize('errors.order_validation.custom_fields_validation.description')}}
+                                </flash-message>
+                                <!-- BUTTON: checkout -->
+                                <button-primary
+                                    label="actions.checkout"
+                                    icon="continue-arrow"
+                                    :state="checkoutDisabled ? 'disabled' : undefined"
+                                    @click="checkout"
+                                ></button-primary>
+                                <button-link
+                                    v-if="isSideCart"
+                                    label="cart.view_detailed_cart"
+                                    @click="viewDetailedCart"
+                                ></button-link>
+                            </footer>
+
+                            <div class="snipcart-cart__featured-payment-methods-container">
+                                <featured-payment-methods v-if="!editingCart"></featured-payment-methods>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </overridable>
+            <empty-cart v-else></empty-cart>
+        </loading-screen>
+        <transition name="snipcart-transition--slide-in">
+            <router-view />
+        </transition>
+    </layout>

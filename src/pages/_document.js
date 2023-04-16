@@ -31,6 +31,15 @@ class MyDocument extends Document {
                 <snipcart-input name="phone"></snipcart-input>
               </div>
             </address-fields>
+
+            <div id="snipcart-templates">
+              <component-to-override section="top">
+                  <div class="root">
+                      This will be inserted into the section named `top`.
+                  </div>
+              </component-to-override>
+            </div>
+
           </div>
         </body>
       </Html>

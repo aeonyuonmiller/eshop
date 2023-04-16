@@ -28,6 +28,10 @@ body::-webkit-scrollbar {
   width: 0 !important;
 }
 
+.snipcart-overwrite #snipcart-footer #snipcart-powered {
+  display: none;
+}
+
 h1{ 
   font-size: 8px;
   font-weight: 800;
@@ -196,7 +200,6 @@ nav a:hover{ opacity:1; cursor: pointer; }
   grid-column: 1 / 4;
 }
 
-
 .centerstage{
   position: fixed;
   width: 100vw;
@@ -247,7 +250,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
 }
 .card .content{
   position: fixed;
-  bottom: -32px;
+  bottom: -44px;
   width: 50vmin;
   font-size: 10px;
   text-transform: uppercase;
@@ -255,6 +258,18 @@ nav a:hover{ opacity:1; cursor: pointer; }
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
+}
+.card .sold-out{ 
+  position: absolute;
+  background: rgb(119, 119, 119);
+  color: white;
+  font-size: 6px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1em 1.8em;
+  border-radius: 50px;
+  left: calc(50% - 35px);
+  bottom: -8em;
 }
 .card .content span:first-child {
   transition: all ease .6s;
@@ -357,13 +372,18 @@ nav a:hover{ opacity:1; cursor: pointer; }
   }
   .card .content {
     position: absolute;
-    bottom: -6em;
-    width: 40vmin;
+    bottom: -160px;
+    width: 50vmin;
     font-size: 12px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    gap: .6em;
+    gap: 10px;
+  }
+  .card .sold-out{
+    top: -2em;
+    bottom: inherit;
+    left: calc(50% - 10px);
   }
   nav a { 
     font-size: 12px;
