@@ -263,6 +263,19 @@ nav a:hover{ opacity:1; cursor: pointer; }
 }
 .card .sold-out{ 
   position: absolute;
+  background: rgb(160, 160, 160);
+  color: white;
+  font-size: 6px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 1em 1.8em;
+  width: 90px;
+  border-radius: 50px;
+  left: calc(50% - 45px);
+  top: -8em;
+}
+.card .buy{ 
+  position: absolute;
   background: rgb(119, 119, 119);
   color: white;
   font-size: 6px;
@@ -396,10 +409,4 @@ nav a:hover{ opacity:1; cursor: pointer; }
 
 @media only screen and (max-width: 550px) {
   .underline { padding: 4px 0; }
-}
-
-/* SNipcart styling */
-
-.snipcart-overwrite #snipcart-footer #snipcart-powered {
-  display: none;
 }
