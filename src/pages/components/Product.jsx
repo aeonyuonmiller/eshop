@@ -28,7 +28,7 @@ const Product = ({ src = "", title = "" }) => {
     return (
       <m.section className="product-display">
         <m.div variants={item} initial="hide" whileInView="show" exit="leave" className="product-title">{title}</m.div>
-        <m.img layout layoutId="cardo" loading="lazy" variants={item} draggable="false" src={src}/>
+        <m.img loading="lazy" variants={item} draggable="false" src={src}/>
       </m.section>
     )
 }
