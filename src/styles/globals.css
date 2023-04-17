@@ -357,7 +357,17 @@ nav a:hover{ opacity:1; cursor: pointer; }
 .product-title{
   position: relative;
   color: white;
-  top: calc(50vh - .5em);
+  font-size: 16px;
+  height: fit-content;
+  width: fit-content;
+  top: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 5;
+  padding: .5em 1em;
+  padding-bottom: calc(.5em + 1px);
+  border-radius: 32px;
+  background-color: rgba(72, 72, 72, 0.2);
 }
 
 .price{
