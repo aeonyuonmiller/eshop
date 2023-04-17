@@ -30,25 +30,25 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
     return (
         <m.section className="card" 
         style={{
-          display: "flex",
-          perspective: 400
+          perspective: 600
       }}
       onMouseMove={handleMouse}
       onMouseLeave={() => {
           animate(x, 200);
           animate(y, 200);
       }}>
-        <button className="snipcart-add-item buy"
-                data-item-id="starry-night"
-                data-item-price="79.99"
-                data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-                data-item-image="/hoodie-front.png"
-                data-item-name="Hoodie"
-                data-item-custom1-name="Size"
-                data-item-custom1-options="S|M|L|XL"
-              >
-                Add to cart
-              </button>
+        <m.button 
+          className="snipcart-add-item buy"
+          data-item-id="starry-night"
+          data-item-price="12.00"
+          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-image="/hoodie-front.png"
+          data-item-name="Hoodie"
+          data-item-custom1-name="Size"
+          data-item-custom1-options="S|M|L|XL"
+          >
+          Add to cart
+        </m.button>
           <Link tabIndex="1" aria-labelledby={title} prefetch href={url} scroll={false}>
             <m.img loading="lazy" style={{ x: rotateX, y: rotateY }} className="image" variants={item} src={src} transition="transition" animate="show" whileHover="hover" exit="exit" draggable="false" />
               <span className='sold-out'>Sold out</span>
