@@ -1,10 +1,16 @@
+## Technologies used
+
+- NextJS
+- Framer Motion
+- Snipcart
+
 ## ToDo
 
 - [x] Nextjs
 - [x] Framer Motion
 - [x] Snipcart
 - [x] MousePosition FX on card component
-- [ ] Customize snipcart cart
+- [ ] Customize cart
 
 ## Current result
 
