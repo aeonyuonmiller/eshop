@@ -1,3 +1,7 @@
+## Current result
+
+[View site](https://shop-aeonyuonmiller.vercel.app)
+
 ## Technologies used
 
 - NextJS
@@ -11,7 +15,3 @@
 - [x] Snipcart
 - [x] MousePosition FX on card component
 - [ ] Customize cart
-
-## Current result
-
-[View site](https://shop-aeonyuonmiller.vercel.app)
