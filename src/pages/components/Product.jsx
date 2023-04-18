@@ -4,7 +4,7 @@ import { m } from "framer-motion";
 const Product = ({ src = "", title = "" }) => {
   const item = {
     hide: { 
-      scale: 1.1,
+      scale: 0.91,
       opacity: 0.5, 
       filter: "blur(10px)" 
     },
