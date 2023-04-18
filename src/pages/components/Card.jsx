@@ -42,28 +42,32 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
         animate(x, 200);
         animate(y, 200);
     }}
+    >
+      <m.button 
+        className="snipcart-add-item buy"
+        data-item-id="starry-night"
+        data-item-price="12.00"
+        data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+        data-item-image="/hoodie-front.png"
+        data-item-name="Hoodie"
+        data-item-custom1-name="Size"
+        data-item-custom1-options="S|M|L|XL"
+        viewport={{ amount: 1 }}
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1, transition:{ type: "spring", damping: 18, delay: .6 }}}
+        exit={{ opacity: 0, scale: 0.9 }}
       >
-        <m.button 
-          className="snipcart-add-item buy"
-          data-item-id="starry-night"
-          data-item-price="12.00"
-          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-          data-item-image="/hoodie-front.png"
-          data-item-name="Hoodie"
-          data-item-custom1-name="Size"
-          data-item-custom1-options="S|M|L|XL"
-          >
-          Add to cart
-        </m.button>
-          <Link tabIndex="1" aria-labelledby={title} prefetch href={url} scroll={false}>
-            <m.img loading="lazy" style={{ x: rotateX, y: rotateY }} className="image" variants={item} src={src} transition="transition" animate="show" whileHover="hover" exit="exit" draggable="false" />
-              <span className='sold-out'>Sold out</span>
-            <m.div className='content' viewport={{ amount: 1 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>
-              <span>{title}</span>
-              <span>{price}</span>
-            </m.div>
-          </Link>
-        </m.section>
+        Add to cart
+      </m.button>
+        <Link tabIndex="1" aria-labelledby={title} prefetch href={url} scroll={false}>
+          <m.img loading="lazy" style={{ x: rotateX, y: rotateY }} className="image" variants={item} src={src} transition="transition" animate="show" whileHover="hover" exit="exit" draggable="false" />
+            <span className='sold-out'>Sold out</span>
+          <m.div className='content' viewport={{ amount: 1 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>
+            <span>{title}</span>
+            <span>{price}</span>
+          </m.div>
+        </Link>
+      </m.section>
     )
 }
 
