@@ -41,28 +41,28 @@ export default function Home() {
           src="./hoodie-front.png"
           url="/product"
           title="cube"
-          price="80,00 €"
+          price="80.00"
           desc="Hoodie Basic"
         />
         <Card 
           src="./shirt.png" 
           url="/product" 
           title="glas" 
-          price="120,00 €" 
+          price="120.00" 
           desc="Shirt Classic"
         />
         <Card
           src="./lava.png"
           url="/product"
           title="Faux-Silk"
-          price="500,00 €"
+          price="500.00"
           desc="Shirt Classic"
         />
         <Card
           src="./mirror.png"
           url="product"
           title="mirror"
-          price="1200,00 €"
+          price="1200.00"
           desc="Silk scarf"
         />
       </ImageSlider>
