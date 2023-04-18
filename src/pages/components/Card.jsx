@@ -3,7 +3,7 @@ import React from 'react'
 import { m, useMotionValue, useTransform, animate } from "framer-motion";
 
 
-const Card = ({ url = "", src = "", title = "", price = "" }) => {
+const Card = ({ url = "", src = "", title = "", price = "", desc = "" }) => {
   const item = {
     hide: { y: 20, opacity: 0 },
     show: { scale: 1, y: 0, opacity: 1, transition:{ ease: [.98,0,.2,1.01], duration: .6 }} ,
@@ -28,9 +28,9 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
     
     
     return (
-        <m.section className="card" 
-        style={{
-          perspective: 600
+    <m.section className="card" 
+      style={{
+        perspective: 600
       }}
       onMouseMove={handleMouse}
       onTouchMove={handleMouse}
@@ -41,15 +41,16 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
       onTouchEnd={() => {
         animate(x, 200);
         animate(y, 200);
-    }}
+      }}
     >
       <m.button 
         className="snipcart-add-item buy"
-        data-item-id="starry-night"
-        data-item-price="12.00"
-        data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-        data-item-image="/hoodie-front.png"
-        data-item-name="Hoodie"
+        data-item-id={title}
+        data-item-price={price}
+        data-item-description={desc}
+        // data-item-image="/hoodie-front.png"
+        data-item-image={src}
+        data-item-name={title}
         data-item-custom1-name="Size"
         data-item-custom1-options="S|M|L|XL"
         viewport={{ amount: 1 }}
@@ -61,11 +62,11 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
       </m.button>
         <Link tabIndex="1" aria-labelledby={title} prefetch href={url} scroll={false}>
           <m.img loading="lazy" style={{ x: rotateX, y: rotateY }} className="image" variants={item} src={src} transition="transition" animate="show" whileHover="hover" exit="exit" draggable="false" />
-            <span className='sold-out'>Sold out</span>
           <m.div className='content' viewport={{ amount: 1 }} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0, transition:{ ease: [.98,0,.2,1.01], duration: .6, delay: .1 }}}>
             <span>{title}</span>
             <span>{price}</span>
           </m.div>
+          <span className='sold-out'>Sold out</span>
         </Link>
       </m.section>
     )

@@ -1,6 +1,5 @@
 import { m } from "framer-motion";
 
-
 const Product = ({ src = "", title = "" }) => {
   const item = {
     hide: { 

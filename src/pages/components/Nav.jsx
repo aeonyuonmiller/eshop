@@ -11,7 +11,7 @@ function Nav () {
     <>
       {/* visible nav */}
       {currentRoute === '/' ? 
-      <m.nav initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0, transition:{ ease: "circOut", delay: 1 ,duration: 0.2 }}} exit={{ y: "100%", transition:{ duration: 0.4 }}}>
+      <m.nav initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0, transition:{ ease: "circIn", delay: .6 ,duration: 0.2 }}} exit={{ y: "100%", transition:{ duration: 0.4 }}}>
         <div>
           <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
           <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
