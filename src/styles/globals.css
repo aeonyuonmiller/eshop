@@ -279,15 +279,27 @@ nav a:hover{ opacity:1; cursor: pointer; }
   background: hsl(120, 98%, 30%);
   color: white;
   font-size: 6px;
-  letter-spacing: 2px;
+  letter-spacing: .02em;
   text-transform: uppercase;
-  padding: 1em 1.6em;
+  padding: 1em 2em;
   border-radius: 50px;
   width: fit-content;
   left: calc(50% - 57px);
   bottom: -8em;
   cursor: pointer;
   z-index: 10;
+  transition: background-color ease .8s;
+}
+.card .buy::after {
+  content: "";
+  position: absolute;
+  top: var(--tap-increment);
+  left: var(--tap-increment);
+  right: var(--tap-increment);
+  bottom: var(--tap-increment);
+}
+.card .buy:hover{
+  background: hsl(120, 98%, 20%);
 }
 .big-buy{
   position: fixed;
