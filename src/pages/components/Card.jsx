@@ -33,10 +33,16 @@ const Card = ({ url = "", src = "", title = "", price = "" }) => {
           perspective: 600
       }}
       onMouseMove={handleMouse}
+      onTouchMove={handleMouse}
       onMouseLeave={() => {
           animate(x, 200);
           animate(y, 200);
-      }}>
+      }}
+      onTouchEnd={() => {
+        animate(x, 200);
+        animate(y, 200);
+    }}
+      >
         <m.button 
           className="snipcart-add-item buy"
           data-item-id="starry-night"
