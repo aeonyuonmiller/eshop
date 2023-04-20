@@ -8,12 +8,12 @@ function CloseIcon() {
 
     const draw = {
       hidden: { pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
-      animate: { pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition: { duration: .8, type: "easeOut" }},
+      animate: { pathLength: 1, filter: "blur(0)", strokeWidth: 10, transition: { duration: .8, type: "easeOut" }},
       exit: { pathLength: 0, strokeWidth: 20, transition: { duration: .8, type: "easeOut" }},
     }
     const draw2 = {
       hidden: { opacity: 0, pathLength: 0, filter: "blur(18px)", strokeWidth: 20 },
-      animate: { opacity: 1, pathLength: 1, filter: "blur(0)", strokeWidth: 4, transition: { duration: .8, delay: 0.3, type: "easeOut" }},
+      animate: { opacity: 1, pathLength: 1, filter: "blur(0)", strokeWidth: 10, transition: { duration: .8, delay: 0.3, type: "easeOut" }},
       exit: { opacity: 0, pathLength: 0, strokeWidth: 20, transition: { duration: .8, type: "easeOut" }},
     }
 
