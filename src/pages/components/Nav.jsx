@@ -2,6 +2,7 @@ import React from 'react'
 import { m } from "framer-motion";
 import Link from 'next/link'
 import { useRouter } from 'next/router';
+import Cart from './icons/Cart';
 
 function Nav () {
   const router = useRouter();
@@ -22,7 +23,7 @@ function Nav () {
         
         <span>
           <a className='snipcart-checkout' href="/" tabIndex={1}>
-            <div className="cart-icon"><span>🛒</span></div>
+            <div className="cart-icon"><span><Cart /></span></div>
           </a>
         </span>
         </m.nav>
@@ -37,7 +38,7 @@ function Nav () {
           </div>
           <span>
             <a className='snipcart-checkout' href="/" tabIndex={1}>
-              <div className="cart-icon"><span>🛒</span></div>
+              <div className="cart-icon"><span><Cart /></span></div>
             </a>
           </span>
         </m.nav>
