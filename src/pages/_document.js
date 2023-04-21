@@ -11,6 +11,10 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css"
           />
+          <link
+            rel="stylesheet"
+            href="snipcart.css"
+          />
         </Head>
         <body>
           <Main />
