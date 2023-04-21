@@ -6,6 +6,7 @@ import { m } from "framer-motion";
 import ImageSlider from "./components/Slider";
 import CloseButton from './components/icons/CloseButton'
 import Product from "./components/Product";
+import Accordion from './components/Accordion';
 
 const product = () => {
   return (
@@ -24,6 +25,7 @@ const product = () => {
         <Product src="./shirt.png" title="neuer mensch air max" />
         <section className="product-display">
           Material: 100% Cotton
+          <Accordion question="Material" answer="100% Cotton" />
         </section>
       </ImageSlider>
 
