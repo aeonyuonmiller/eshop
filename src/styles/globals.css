@@ -107,6 +107,12 @@ nav a:hover{ opacity:1; cursor: pointer; }
   }
 }
 
+.accordion-title{
+  background: white;
+  border-radius: 8px;
+  padding: 1em;
+}
+
 .cart{
     position: fixed;
     top: 0;
