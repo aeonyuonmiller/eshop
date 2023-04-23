@@ -6,11 +6,10 @@ const Accordion = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <m.div>
+    <m.div className="accordion">
       <AnimatePresence>
         <m.div
           // key="question"
-          className="accordion"
           onClick={() => setIsOpen(!isOpen)}
         >
           <m.div className="accordion-title">
