@@ -112,6 +112,10 @@ nav a:hover{ opacity:1; cursor: pointer; }
   border-radius: 8px;
   padding: 1em;
 }
+.accordion-open{
+  color: rgb(93, 93, 93);
+  padding: 1em;
+}
 
 .cart{
     position: fixed;
