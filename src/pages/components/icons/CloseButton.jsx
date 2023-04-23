@@ -1,9 +1,10 @@
 import React from 'react'
-import { m } from "framer-motion"
+import { m } from "framer-motion";
 import Link from 'next/link'
 import CloseIcon from "./CloseIcon"
 
 const Close = () => {
+
     return (
         <Link href="/" scroll={false}>
             <m.div tabIndex={6}
