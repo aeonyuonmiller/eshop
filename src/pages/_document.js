@@ -13,7 +13,7 @@ class MyDocument extends Document {
           />
           <link
             rel="stylesheet"
-            href="snipcart.css"
+            href="/snipcart.css"
           />
         </Head>
         <body>
