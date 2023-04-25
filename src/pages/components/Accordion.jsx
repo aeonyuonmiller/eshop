@@ -1,13 +1,14 @@
 import { useState } from "react";
-import { m, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence, LayoutGroup } from "framer-motion";
 
 const Accordion = ({ question, answer }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <m.div className="accordion">
+    <LayoutGroup>
       <AnimatePresence>
+    <m.div className="accordion">
         <m.div
           // key="question"
           onClick={() => setIsOpen(!isOpen)}
@@ -15,9 +16,8 @@ const Accordion = ({ question, answer }) => {
           <m.div className="accordion-title">
           {question}
           </m.div>
-        </m.div>
 
-        {isOpen && (
+          {isOpen && (
           <m.div
             // key="answer"
             initial={{ opacity: 0 }}
@@ -33,8 +33,11 @@ const Accordion = ({ question, answer }) => {
             {answer}
           </m.div>
         )}
-      </AnimatePresence>
+
+        </m.div>
     </m.div>
+      </AnimatePresence>
+      </LayoutGroup>
   );
 };
 

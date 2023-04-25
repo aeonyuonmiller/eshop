@@ -3,6 +3,10 @@
   --secondary: rgba(255, 255, 255, 0.8);
   --tertiary: rgb(88, 88, 88);
   --tap-increment: -16px;
+
+  --grad1: linear-gradient(142deg, rgba(255,49,49,1) 25%, rgba(255,67,180,1) 50%, rgba(89,0,163,1) 100%);
+  --grad2: linear-gradient(142deg, rgb(80, 255, 49) 25%, rgb(67, 255, 174) 50%, rgb(0, 133, 163) 100%);
+  --grad3: linear-gradient(142deg, rgb(49, 83, 255) 25%, rgb(127, 67, 255) 50%, rgb(0, 163, 92) 100%);
 }
 
 * {
@@ -366,6 +370,17 @@ nav a:hover{ opacity:1; cursor: pointer; }
   display: flex;
   position: relative;
 
+}
+
+.description{
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.description ul{
+  list-style: square inside /* url("sqpurple.gif") */; 
 }
 
 .slider .product-display:first-child { margin-left: calc(50vw - 50vh); }

@@ -14,7 +14,7 @@ const imprint = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout bgColor="#4624bf">
+      <Layout bgColor="#4c3443">
         <h1>Imprint</h1>
         <m.span initial={{y: 30, opacity: 0}} animate={{y: 0, opacity:1, transition:{ease: [.3,0,.2,1.01], duration: 1.2, delay: .4}}} exit={{y: -30, opacity: 0, transition:{ease: [.3,0,.2,1.01], duration: .6}}}>
            <h5>INTROVERT worldwide</h5>

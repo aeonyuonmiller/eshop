@@ -24,8 +24,21 @@ const product = () => {
         <Product src="./hoodie-front.png" title="Faux-Silk" />
         <Product src="./shirt.png" title="neuer mensch air max" />
         <section className="product-display">
-          Material: 100% Cotton
-          <Accordion question="Material" answer="100% Cotton" />
+          <div className="description">
+            Material: 100% Cotton<br/><br/>
+            <ul>
+              <li>Gerippter Polokragen</li>
+              <li>Kurzärmliges Design</li>
+              <li>Röhrenförmiger Abschlüsse</li>
+              <li>ufgesetzte Taschen</li>
+              <li>Knopfverschluss</li>
+              <li>Over Fit</li>
+              <li>Das Model ist 187 cm groß und trägt die italienische Größe 48.</li>
+            </ul>
+            <Accordion question="Care" answer="Wash only by hand." />
+            <Accordion question="Care" answer="Wash only by hand." />
+            <Accordion question="Care" answer="Wash only by hand." />
+          </div>
         </section>
       </ImageSlider>
 
