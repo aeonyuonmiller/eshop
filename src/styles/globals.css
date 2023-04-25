@@ -383,6 +383,8 @@ nav a:hover{ opacity:1; cursor: pointer; }
   max-width: 500px;
   margin: auto;
   margin-top: 20%;
+  color: var(--tertiary);
+  line-height: 1.4em;
 }
 
 .description ul{
