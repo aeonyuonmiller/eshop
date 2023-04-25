@@ -14,11 +14,9 @@ function Nav () {
       {currentRoute === '/' ? 
       <m.nav initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0, transition:{ ease: "circIn", delay: .6 ,duration: 0.2 }}} exit={{ y: "100%", transition:{ duration: 0.4 }}}>
         <div>
-          <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
           <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
           <Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link>
           <Link scroll={false} tabIndex={2} className="underline" href="/imprint">imprint</Link>
-
         </div>
         
         <span>
@@ -31,7 +29,6 @@ function Nav () {
         /* hidden nav */
         <m.nav animate={{ opacity: 0, y: 100, transition:{ ease: "circOut", duration: 0.2 }}}>
           <div>
-            <Link scroll={false} tabIndex={2} className="underline" href="/returns">returns</Link>
             <Link scroll={false} tabIndex={2} className="underline" href="/shipping">shipping</Link>
             <Link scroll={false} tabIndex={2} className="underline" href="/privacy">privacy</Link>
             <Link scroll={false} tabIndex={2} className="underline" href="/imprint">imprint</Link>
