@@ -75,7 +75,7 @@ nav a {
   text-decoration: none;
   font-size: 10px;
   font-family: "Inter", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.8px;
   float: left; 
   opacity: .8;
@@ -280,10 +280,11 @@ nav a:hover{ opacity:1; cursor: pointer; }
   position: absolute;
   background: rgb(160, 160, 160);
   color: white;
-  font-size: 6px;
-  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  padding: 1em 1.8em;
+  padding: 1em 1.6em;
   border-radius: 50px;
   left: calc(50% - 45px);
   top: -8em;
@@ -293,14 +294,15 @@ nav a:hover{ opacity:1; cursor: pointer; }
   border: none;
   background: hsl(120, 98%, 30%);
   color: white;
-  font-size: 6px;
-  letter-spacing: .02em;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 1em 2em;
+  padding: 1em 1.6em;
   border-radius: 50px;
   width: fit-content;
   left: calc(50% - 57px);
-  bottom: -8em;
+  bottom: -55px;
   cursor: pointer;
   z-index: 10;
   transition: background-color ease .8s;
@@ -417,7 +419,10 @@ nav a:hover{ opacity:1; cursor: pointer; }
   width: 90px;
   color: whitesmoke;
   font-size: 10px;
-  letter-spacing: 3px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1em 1.6em;
 }
 
 .scrollbar{
@@ -474,7 +479,7 @@ nav a:hover{ opacity:1; cursor: pointer; }
   }
   .card .content {
     position: absolute;
-    bottom: -160px;
+    bottom: -130px;
     width: 50vmin;
     font-size: 12px;
     display: flex;
@@ -483,13 +488,13 @@ nav a:hover{ opacity:1; cursor: pointer; }
     gap: 10px;
   }
   .card .sold-out{
-    top: -2em;
     bottom: inherit;
-    left: calc(50% - 10px);
+    left: calc(50% - 30px);
+    width: 100px;
   }
   .card .buy{
-    bottom: -200px;
-    left: calc(50% - 10px);
+    bottom: -195px;
+    left: calc(50% - 35px);
   }
   nav a { 
     font-size: 12px;
