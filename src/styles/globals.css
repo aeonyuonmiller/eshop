@@ -111,6 +111,12 @@ nav a:hover{ opacity:1; cursor: pointer; }
   }
 }
 
+.accordion{
+  margin-bottom: 1em;
+}
+.accordion:first-of-type{
+  margin-top: 2em;
+}
 .accordion-title{
   background: white;
   border-radius: 8px;

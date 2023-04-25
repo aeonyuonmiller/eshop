@@ -25,7 +25,8 @@ const product = () => {
         <Product src="./shirt.png" title="neuer mensch air max" />
         <section className="product-display">
           <div className="description">
-            Material: 100% Cotton<br/><br/>
+            Material: 100% Cotton
+            <br/><br/>
             <ul>
               <li>Gerippter Polokragen</li>
               <li>Kurzärmliges Design</li>
