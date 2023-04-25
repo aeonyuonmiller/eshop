@@ -37,7 +37,7 @@ const product = () => {
               <li>Das Model ist 187 cm groß und trägt die italienische Größe 48.</li>
             </ul>
             <Accordion question="Care" answer="Wash only by hand." />
-            <Accordion question="Care" answer="Wash only by hand." />
+            <Accordion question="Size Guide" answer="Wash only by hand." />
             <Accordion question="Care" answer="Wash only by hand." />
           </div>
         </section>
